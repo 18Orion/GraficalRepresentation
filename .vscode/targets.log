@@ -6,14 +6,13 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sat Jan 29 21:14:26 2022
+# Make data base, printed on Wed Feb  2 22:05:26 2022
 
 # Variables
 
 # makefile (from 'Makefile', line 29)
 INSTALL_PROGRAM = install -m 755 -p
 # environment
- 
 GDK_BACKEND = x11
 # environment
 LC_ALL = C
@@ -30,7 +29,7 @@ QINSTALL_PROGRAM = /usr/bin/qmake -install qinstall -exe
 # makefile (from 'Makefile', line 41)
 LINK = g++
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-eb7e59c9-10eb-476b-81e9-89735898a42a.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-ccd94f59-c1d2-4f9b-92b8-dfe54261937b.sock
 # environment
 LC_NAME = es_ES.UTF-8
 # environment
@@ -47,6 +46,8 @@ LC_ADDRESS = es_ES.UTF-8
 MAKE_COMMAND := make
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
+# environment
+GDK_DPI_SCALE = 1
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -74,7 +75,7 @@ XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session3
 # environment
 LANG = C
 # environment
-XAUTHORITY = /home/sergio/.Xauthority
+XAUTHORITY = /run/user/1000/xauth_BmdlqP
 # default
 .LOADED := 
 # default
@@ -83,6 +84,8 @@ XAUTHORITY = /home/sergio/.Xauthority
 DISTNAME = Grafica1.0.0
 # makefile
 MAKEFLAGS = pqrR
+# environment
+PLASMA_USE_QT_SCALING = 1
 # makefile (from 'Makefile', line 37)
 TAR = tar -cf
 # makefile (from 'Makefile', line 40)
@@ -108,6 +111,8 @@ MFLAGS = -pqrR
 # default
 .SHELLFLAGS := -c
 # environment
+WAYLAND_DISPLAY = wayland-0
+# environment
 XDG_CONFIG_DIRS = /home/sergio/.config/kdedefaults:/etc/xdg
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
@@ -126,9 +131,9 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 8122
+VSCODE_PID = 51994
 # environment
-XDG_SESSION_TYPE = x11
+XDG_SESSION_TYPE = wayland
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # makefile (from 'Makefile', line 45)
@@ -136,7 +141,7 @@ RANLIB =
 # makefile (from 'Makefile', line 285)
 DESTDIR = 
 # environment
-SESSION_MANAGER = local/Orion:@/tmp/.ICE-unix/1569,unix/Orion:/tmp/.ICE-unix/1569
+SESSION_MANAGER = local/Orion:@/tmp/.ICE-unix/40548,unix/Orion:/tmp/.ICE-unix/40548
 # automatic
 *F = $(notdir $*)
 # makefile (from 'Makefile', line 38)
@@ -166,6 +171,8 @@ MAKECMDGOALS := all
 # makefile (from 'Makefile', line 17)
 DEFINES = -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB
 # environment
+XDG_ACTIVATION_TOKEN = Orion;1643829557;343359;40584_TIME0
+# environment
 SHLVL = 0
 # environment
 MAKELEVEL := 0
@@ -186,13 +193,13 @@ MOTD_SHOWN = pam
 # automatic
 ^F = $(notdir $^)
 # environment
-KCRASH_AUTO_RESTARTED = 1
-# environment
 LC_TIME = es_ES.UTF-8
 # environment
 VSCODE_LOG_NATIVE = false
 # environment
 LC_TELEPHONE = es_ES.UTF-8
+# environment
+GDK_SCALE = 1
 # automatic
 ?F = $(notdir $?)
 # makefile (from 'Makefile', line 26)
@@ -203,12 +210,14 @@ KDE_APPLICATIONS_AS_SCOPE = 1
 XDG_SEAT = seat0
 # environment
 XDG_CURRENT_DESKTOP = KDE
+# environment
+XKB_DEFAULT_VARIANT = winkeys
 # automatic
 +F = $(notdir $+)
 # environment
 XDG_SEAT_PATH = /org/freedesktop/DisplayManager/Seat0
 # environment
-DESKTOP_SESSION = plasma
+DESKTOP_SESSION = plasmawayland
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = KDE
 # makefile (from 'Makefile', line 35)
@@ -220,19 +229,17 @@ GNUMAKEFLAGS :=
 # environment
 LOGNAME = sergio
 # environment
-XDG_VTNR = 1
+XDG_VTNR = 2
 # makefile
 .DEFAULT_GOAL := first
 # makefile (from 'Makefile', line 28)
 INSTALL_FILE = install -m 644 -p
 # environment
-SYSTEMD_EXEC_PID = 1121
+SYSTEMD_EXEC_PID = 2594
 # makefile (from 'Makefile', line 34)
 SYMLINK = ln -f -s
 # environment
-DISPLAY = :0
-# environment
-GTK_MODULES = canberra-gtk-module
+DISPLAY = :1
 # environment
 USER = sergio
 # default
@@ -246,9 +253,13 @@ COPY = cp -f
 # makefile (from 'Makefile', line 20)
 INCPATH = -I. -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I. -I. -I/usr/lib/qt/mkspecs/linux-g++
 # environment
+QT_WAYLAND_FORCE_DPI = 96
+# environment
 LC_MEASUREMENT = es_ES.UTF-8
 # makefile (from 'Makefile', line 9)
 MAKEFILE = Makefile
+# environment
+XKB_DEFAULT_LAYOUT = es
 # environment
 _ = /usr/bin/make
 # environment
@@ -266,13 +277,14 @@ GTK2_RC_FILES = /etc/gtk-2.0/gtkrc:/home/sergio/.gtkrc-2.0:/home/sergio/.config/
 # environment
 HOME = /home/sergio
 # environment
+ 
 ELECTRON_RUN_AS_NODE = 1
 # environment
 VSCODE_IPC_HOOK = /run/user/1000/vscode-ce32c02d-1.63.2-main.sock
 # environment
 HG = /usr/bin/hg
 # environment
-XDG_SESSION_ID = 2
+XDG_SESSION_ID = 5
 # environment
 XCURSOR_SIZE = 24
 # default
@@ -312,7 +324,7 @@ KDE_FULL_SESSION = true
 # environment
 LC_IDENTIFICATION = es_ES.UTF-8
 # variable set hash-table stats:
-# Load=150/1024=15%, Rehash=0, Collisions=20/185=11%
+# Load=156/1024=15%, Rehash=0, Collisions=19/191=10%
 
 # Pattern-specific Variable Values
 
@@ -320,9 +332,9 @@ LC_IDENTIFICATION = es_ES.UTF-8
 
 # Directories
 
-# . (device 2052, inode 10472): 12 files, no impossibilities.
+# . (device 2052, inode 10472): 13 files, no impossibilities.
 
-# 12 files, no impossibilities in 1 directories.
+# 13 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -337,7 +349,6 @@ mocables: compiler_moc_header_make_all compiler_moc_objc_header_make_all compile
 
 /usr/lib/qt/mkspecs/modules/qt_Attica.pri:
 #  Implicit rule search has been done.
- 
 #  Last modified 2022-01-03 23:51:53
 #  File has been updated.
 #  Successfully updated.
@@ -350,7 +361,7 @@ mocables: compiler_moc_header_make_all compiler_moc_objc_header_make_all compile
 
 /usr/lib/qt/mkspecs/modules/qt_lib_quick.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-08 10:36:20
+#  Last modified 2022-01-31 17:34:41
 #  File has been updated.
 #  Successfully updated.
 
@@ -375,13 +386,13 @@ dist: distdir FORCE
 
 /usr/lib/qt/mkspecs/features/default_pre.prf:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_designer.pri:
 #  Implicit rule search has been done.
-#  Last modified 2021-10-23 10:08:48
+#  Last modified 2022-01-29 23:36:41
 #  File has been updated.
 #  Successfully updated.
 
@@ -397,7 +408,7 @@ check: first
 
 /usr/lib/qt/mkspecs/modules/qt_lib_eglfsdeviceintegration_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
@@ -425,13 +436,13 @@ distclean: clean
 
 /usr/lib/qt/mkspecs/modules/qt_lib_xkbcommon_support_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_positioningquick.pri:
 #  Implicit rule search has been done.
-#  Last modified 2021-11-22 00:37:05
+#  Last modified 2022-01-29 22:42:44
 #  File has been updated.
 #  Successfully updated.
 
@@ -444,7 +455,7 @@ moc_predefs.h: /usr/lib/qt/mkspecs/features/data/dummy.cpp
 
 /usr/lib/qt/mkspecs/modules/qt_lib_widgets.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
@@ -467,13 +478,13 @@ mocclean: compiler_moc_header_clean compiler_moc_objc_header_clean compiler_moc_
 
 /usr/lib/qt/mkspecs/features/yacc.prf:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/common/gcc-base.conf:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
@@ -493,7 +504,7 @@ uninstall_target: FORCE
 
 /usr/lib/qt/mkspecs/modules/qt_lib_quickcontrols2.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-21 08:01:38
+#  Last modified 2022-01-31 22:16:01
 #  File has been updated.
 #  Successfully updated.
 
@@ -505,13 +516,13 @@ uninstall_target: FORCE
 
 /usr/lib/qt/mkspecs/modules/qt_lib_designercomponents_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2021-10-23 10:08:48
+#  Last modified 2022-01-29 23:36:41
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_qmldevtools_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-08 10:36:20
+#  Last modified 2022-01-31 17:34:41
 #  File has been updated.
 #  Successfully updated.
 
@@ -529,13 +540,13 @@ uninstall_target: FORCE
 
 /usr/lib/qt/mkspecs/modules/qt_lib_multimediagsttools_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2020-11-19 16:41:33
+#  Last modified 2022-01-30 11:25:44
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/features/toolchain.prf:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
@@ -546,7 +557,7 @@ compiler_yacc_decl_make_all:
 
 /usr/lib/qt/mkspecs/features/link_ltcg.prf:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
@@ -558,7 +569,7 @@ compiler_yacc_decl_make_all:
 
 /usr/lib/qt/mkspecs/modules/qt_lib_location.pri:
 #  Implicit rule search has been done.
-#  Last modified 2021-11-22 00:37:05
+#  Last modified 2022-01-29 22:42:44
 #  File has been updated.
 #  Successfully updated.
 
@@ -569,7 +580,7 @@ compiler_clean: compiler_moc_predefs_clean compiler_moc_header_clean compiler_ui
 
 /usr/lib/qt/mkspecs/modules/qt_lib_qmltest.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-08 10:36:20
+#  Last modified 2022-01-31 17:34:41
 #  File has been updated.
 #  Successfully updated.
 
@@ -598,7 +609,7 @@ benchmark: first
 
 /usr/lib/qt/mkspecs/modules/qt_lib_platformcompositor_support_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
@@ -616,8 +627,7 @@ benchmark: first
 
 /usr/lib/qt/mkspecs/modules/qt_lib_help.pri:
 #  Implicit rule search has been done.
- 
-#  Last modified 2021-10-23 10:08:48
+#  Last modified 2022-01-29 23:36:41
 #  File has been updated.
 #  Successfully updated.
 
@@ -629,13 +639,13 @@ benchmark: first
 
 /usr/lib/qt/mkspecs/features/qt_functions.prf:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_egl_support_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
@@ -647,7 +657,7 @@ benchmark: first
 
 /usr/lib/qt/mkspecs/common/gcc-base-unix.conf:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
@@ -683,7 +693,7 @@ benchmark: first
 
 Makefile: Grafica.pro /usr/lib/qt/mkspecs/linux-g++/qmake.conf /usr/lib/qt/mkspecs/features/spec_pre.prf /usr/lib/qt/mkspecs/common/unix.conf /usr/lib/qt/mkspecs/common/linux.conf /usr/lib/qt/mkspecs/common/sanitize.conf /usr/lib/qt/mkspecs/common/gcc-base.conf /usr/lib/qt/mkspecs/common/gcc-base-unix.conf /usr/lib/qt/mkspecs/common/g++-base.conf /usr/lib/qt/mkspecs/common/g++-unix.conf /usr/lib/qt/mkspecs/qconfig.pri /usr/lib/qt/mkspecs/modules/qt_Attica.pri /usr/lib/qt/mkspecs/modules/qt_Baloo.pri /usr/lib/qt/mkspecs/modules/qt_BluezQt.pri /usr/lib/qt/mkspecs/modules/qt_KActivities.pri /usr/lib/qt/mkspecs/modules/qt_KActivitiesStats.pri /usr/lib/qt/mkspecs/modules/qt_KArchive.pri /usr/lib/qt/mkspecs/modules/qt_KAuth.pri /usr/lib/qt/mkspecs/modules/qt_KAuthCore.pri /usr/lib/qt/mkspecs/modules/qt_KBookmarks.pri /usr/lib/qt/mkspecs/modules/qt_KCMUtils.pri /usr/lib/qt/mkspecs/modules/qt_KCodecs.pri /usr/lib/qt/mkspecs/modules/qt_KCompletion.pri /usr/lib/qt/mkspecs/modules/qt_KConfigCore.pri /usr/lib/qt/mkspecs/modules/qt_KConfigGui.pri /usr/lib/qt/mkspecs/modules/qt_KConfigWidgets.pri /usr/lib/qt/mkspecs/modules/qt_KContacts.pri /usr/lib/qt/mkspecs/modules/qt_KCoreAddons.pri /usr/lib/qt/mkspecs/modules/qt_KCrash.pri /usr/lib/qt/mkspecs/modules/qt_KDBusAddons.pri /usr/lib/qt/mkspecs/modules/qt_KDeclarative.pri /usr/lib/qt/mkspecs/modules/qt_KDESu.pri /usr/lib/qt/mkspecs/modules/qt_KDNSSD.pri /usr/lib/qt/mkspecs/modules/qt_KDSoapClient.pri /usr/lib/qt/mkspecs/modules/qt_KDSoapServer.pri /usr/lib/qt/mkspecs/modules/qt_KEmoticons.pri /usr/lib/qt/mkspecs/modules/qt_KFileMetaData.pri /usr/lib/qt/mkspecs/modules/qt_KGlobalAccel.pri /usr/lib/qt/mkspecs/modules/qt_KGuiAddons.pri /usr/lib/qt/mkspecs/modules/qt_KHolidays.pri /usr/lib/qt/mkspecs/modules/qt_KI18n.pri /usr/lib/qt/mkspecs/modules/qt_KIconThemes.pri /usr/lib/qt/mkspecs/modules/qt_KIdleTime.pri /usr/lib/qt/mkspecs/modules/qt_KIOCore.pri /usr/lib/qt/mkspecs/modules/qt_KIOFileWidgets.pri /usr/lib/qt/mkspecs/modules/qt_KIOGui.pri /usr/lib/qt/mkspecs/modules/qt_KIOWidgets.pri /usr/lib/qt/mkspecs/modules/qt_Kirigami2.pri /usr/lib/qt/mkspecs/modules/qt_KItemModels.pri /usr/lib/qt/mkspecs/modules/qt_KItemViews.pri /usr/lib/qt/mkspecs/modules/qt_KJobWidgets.pri /usr/lib/qt/mkspecs/modules/qt_KJS.pri /usr/lib/qt/mkspecs/modules/qt_KJSApi.pri /usr/lib/qt/mkspecs/modules/qt_KNewStuff.pri /usr/lib/qt/mkspecs/modules/qt_KNewStuffCore.pri /usr/lib/qt/mkspecs/modules/qt_KNotifications.pri /usr/lib/qt/mkspecs/modules/qt_KNotifyConfig.pri /usr/lib/qt/mkspecs/modules/qt_KNTLM.pri /usr/lib/qt/mkspecs/modules/qt_KParts.pri /usr/lib/qt/mkspecs/modules/qt_KPeople.pri /usr/lib/qt/mkspecs/modules/qt_KPeopleWidgets.pri /usr/lib/qt/mkspecs/modules/qt_KPty.pri /usr/lib/qt/mkspecs/modules/qt_KRunner.pri /usr/lib/qt/mkspecs/modules/qt_KScreen.pri /usr/lib/qt/mkspecs/modules/qt_KService.pri /usr/lib/qt/mkspecs/modules/qt_KSyntaxHighlighting.pri /usr/lib/qt/mkspecs/modules/qt_KTextEditor.pri /usr/lib/qt/mkspecs/modules/qt_KTextWidgets.pri /usr/lib/qt/mkspecs/modules/qt_KUnitConversion.pri /usr/lib/qt/mkspecs/modules/qt_KUserFeedbackCore.pri /usr/lib/qt/mkspecs/modules/qt_KUserFeedbackWidgets.pri /usr/lib/qt/mkspecs/modules/qt_KWallet.pri /usr/lib/qt/mkspecs/modules/qt_KWaylandClient.pri /usr/lib/qt/mkspecs/modules/qt_KWaylandServer.pri /usr/lib/qt/mkspecs/modules/qt_KWidgetsAddons.pri /usr/lib/qt/mkspecs/modules/qt_KWindowSystem.pri /usr/lib/qt/mkspecs/modules/qt_KXmlGui.pri /usr/lib/qt/mkspecs/modules/qt_lib_accessibility_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_bootstrap_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_concurrent.pri /usr/lib/qt/mkspecs/modules/qt_lib_concurrent_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_core.pri /usr/lib/qt/mkspecs/modules/qt_lib_core_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_dbus.pri /usr/lib/qt/mkspecs/modules/qt_lib_dbus_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_designer.pri /usr/lib/qt/mkspecs/modules/qt_lib_designer_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_designercomponents_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_devicediscovery_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_edid_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_egl_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_eglfs_kms_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_eglfsdeviceintegration_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_eventdispatcher_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_fb_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_fontdatabase_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_glx_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_gui.pri /usr/lib/qt/mkspecs/modules/qt_lib_gui_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_help.pri /usr/lib/qt/mkspecs/modules/qt_lib_help_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_input_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_kms_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_linuxaccessibility_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_location.pri /usr/lib/qt/mkspecs/modules/qt_lib_location_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_multimedia.pri /usr/lib/qt/mkspecs/modules/qt_lib_multimedia_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_multimediagsttools_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_multimediawidgets.pri /usr/lib/qt/mkspecs/modules/qt_lib_multimediawidgets_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_network.pri /usr/lib/qt/mkspecs/modules/qt_lib_network_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_opengl.pri /usr/lib/qt/mkspecs/modules/qt_lib_opengl_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_openglextensions.pri /usr/lib/qt/mkspecs/modules/qt_lib_openglextensions_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_packetprotocol_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_pdf.pri /usr/lib/qt/mkspecs/modules/qt_lib_pdf_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_pdfwidgets.pri /usr/lib/qt/mkspecs/modules/qt_lib_pdfwidgets_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_platformcompositor_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_positioning.pri /usr/lib/qt/mkspecs/modules/qt_lib_positioning_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_positioningquick.pri /usr/lib/qt/mkspecs/modules/qt_lib_positioningquick_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_printsupport.pri /usr/lib/qt/mkspecs/modules/qt_lib_printsupport_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_qml.pri /usr/lib/qt/mkspecs/modules/qt_lib_qml_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_qmldebug_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_qmldevtools_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_qmlmodels.pri /usr/lib/qt/mkspecs/modules/qt_lib_qmlmodels_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_qmltest.pri /usr/lib/qt/mkspecs/modules/qt_lib_qmltest_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_qmlworkerscript.pri /usr/lib/qt/mkspecs/modules/qt_lib_qmlworkerscript_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_qtmultimediaquicktools_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_quick.pri /usr/lib/qt/mkspecs/modules/qt_lib_quick_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_quickcontrols2.pri /usr/lib/qt/mkspecs/modules/qt_lib_quickcontrols2_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_quickparticles_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_quickshapes_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_quicktemplates2.pri /usr/lib/qt/mkspecs/modules/qt_lib_quicktemplates2_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_quickwidgets.pri /usr/lib/qt/mkspecs/modules/qt_lib_quickwidgets_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_sensors.pri /usr/lib/qt/mkspecs/modules/qt_lib_sensors_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_service_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_sql.pri /usr/lib/qt/mkspecs/modules/qt_lib_sql_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_svg.pri /usr/lib/qt/mkspecs/modules/qt_lib_svg_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_testlib.pri /usr/lib/qt/mkspecs/modules/qt_lib_testlib_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_texttospeech.pri /usr/lib/qt/mkspecs/modules/qt_lib_texttospeech_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_theme_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_uiplugin.pri /usr/lib/qt/mkspecs/modules/qt_lib_uitools.pri /usr/lib/qt/mkspecs/modules/qt_lib_uitools_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_vulkan_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_waylandclient.pri /usr/lib/qt/mkspecs/modules/qt_lib_waylandclient_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_waylandcompositor.pri /usr/lib/qt/mkspecs/modules/qt_lib_waylandcompositor_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_webchannel.pri /usr/lib/qt/mkspecs/modules/qt_lib_webchannel_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_webengine.pri /usr/lib/qt/mkspecs/modules/qt_lib_webengine_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_webenginecore.pri /usr/lib/qt/mkspecs/modules/qt_lib_webenginecore_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_webenginecoreheaders_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_webenginewidgets.pri /usr/lib/qt/mkspecs/modules/qt_lib_webenginewidgets_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_widgets.pri /usr/lib/qt/mkspecs/modules/qt_lib_widgets_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_x11extras.pri /usr/lib/qt/mkspecs/modules/qt_lib_x11extras_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_xcb_qpa_lib_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_xkbcommon_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_xml.pri /usr/lib/qt/mkspecs/modules/qt_lib_xml_private.pri /usr/lib/qt/mkspecs/modules/qt_phonon4qt5.pri /usr/lib/qt/mkspecs/modules/qt_Prison.pri /usr/lib/qt/mkspecs/modules/qt_QuickAddons.pri /usr/lib/qt/mkspecs/modules/qt_Solid.pri /usr/lib/qt/mkspecs/modules/qt_SonnetCore.pri /usr/lib/qt/mkspecs/modules/qt_SonnetUi.pri /usr/lib/qt/mkspecs/modules/qt_Syndication.pri /usr/lib/qt/mkspecs/modules/qt_ThreadWeaver.pri /usr/lib/qt/mkspecs/features/qt_functions.prf /usr/lib/qt/mkspecs/features/qt_config.prf /usr/lib/qt/mkspecs/linux-g++/qmake.conf /usr/lib/qt/mkspecs/features/spec_post.prf .qmake.stash /usr/lib/qt/mkspecs/features/exclusive_builds.prf /usr/lib/qt/mkspecs/features/toolchain.prf /usr/lib/qt/mkspecs/features/default_pre.prf /usr/lib/qt/mkspecs/features/resolve_config.prf /usr/lib/qt/mkspecs/features/default_post.prf /usr/lib/qt/mkspecs/features/warn_on.prf /usr/lib/qt/mkspecs/features/qt.prf /usr/lib/qt/mkspecs/features/resources_functions.prf /usr/lib/qt/mkspecs/features/resources.prf /usr/lib/qt/mkspecs/features/moc.prf /usr/lib/qt/mkspecs/features/link_ltcg.prf /usr/lib/qt/mkspecs/features/unix/opengl.prf /usr/lib/qt/mkspecs/features/uic.prf /usr/lib/qt/mkspecs/features/unix/thread.prf /usr/lib/qt/mkspecs/features/qmake_use.prf /usr/lib/qt/mkspecs/features/file_copies.prf /usr/lib/qt/mkspecs/features/testcase_targets.prf /usr/lib/qt/mkspecs/features/exceptions.prf /usr/lib/qt/mkspecs/features/yacc.prf /usr/lib/qt/mkspecs/features/lex.prf Grafica.pro
 #  Implicit rule search has not been done.
-#  Last modified 2022-01-29 21:14:26.1095151
+#  Last modified 2022-02-02 22:05:25.7627592
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 514):
@@ -698,13 +708,13 @@ moc_mainwindow.cpp: include/mainwindow.h include/funcion.hpp moc_predefs.h /usr/
 
 /usr/lib/qt/mkspecs/modules/qt_lib_bootstrap_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_xcb_qpa_lib_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
@@ -722,7 +732,7 @@ moc_mainwindow.cpp: include/mainwindow.h include/funcion.hpp moc_predefs.h /usr/
 
 /usr/lib/qt/mkspecs/modules/qt_lib_widgets_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
@@ -734,13 +744,13 @@ moc_mainwindow.cpp: include/mainwindow.h include/funcion.hpp moc_predefs.h /usr/
 
 /usr/lib/qt/mkspecs/modules/qt_lib_printsupport_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_texttospeech_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2020-11-19 16:52:13
+#  Last modified 2022-01-30 12:58:38
 #  File has been updated.
 #  Successfully updated.
 
@@ -758,13 +768,13 @@ distdir: FORCE
 
 /usr/lib/qt/mkspecs/modules/qt_lib_waylandclient_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:47:31
+#  Last modified 2022-01-30 13:15:52
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_input_support_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
@@ -775,7 +785,7 @@ uninstall: uninstall_target FORCE
 
 /usr/lib/qt/mkspecs/modules/qt_lib_webchannel_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2021-12-23 23:07:15
+#  Last modified 2022-01-29 23:45:11
 #  File has been updated.
 #  Successfully updated.
 
@@ -786,7 +796,7 @@ compiler_yacc_impl_clean:
 
 /usr/lib/qt/mkspecs/modules/qt_lib_fb_support_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
@@ -798,28 +808,27 @@ clean: compiler_clean
 	-$(DEL_FILE) $(OBJECTS)
 	-$(DEL_FILE) *~ core *.core
 
- 
 /usr/lib/qt/mkspecs/features/resources.prf:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_gui_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_phonon4qt5.pri:
 #  Implicit rule search has been done.
-#  Last modified 2020-05-19 10:05:34
+#  Last modified 2022-02-02 15:27:28
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_sql_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
@@ -832,19 +841,19 @@ compiler_uic_clean:
 
 /usr/lib/qt/mkspecs/modules/qt_lib_eventdispatcher_support_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_qmlmodels_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-08 10:36:20
+#  Last modified 2022-01-31 17:34:41
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_x11extras_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2020-11-19 16:57:33
+#  Last modified 2022-01-30 13:31:24
 #  File has been updated.
 #  Successfully updated.
 
@@ -856,7 +865,7 @@ compiler_uic_clean:
 
 /usr/lib/qt/mkspecs/modules/qt_lib_qtmultimediaquicktools_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2020-11-19 16:41:33
+#  Last modified 2022-01-30 11:25:44
 #  File has been updated.
 #  Successfully updated.
 
@@ -868,13 +877,13 @@ compiler_uic_clean:
 
 /usr/lib/qt/mkspecs/modules/qt_lib_accessibility_support_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_theme_support_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
@@ -885,13 +894,13 @@ compiler_moc_source_clean:
 
 /usr/lib/qt/mkspecs/modules/qt_lib_webengine.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-04 18:25:32
+#  Last modified 2022-01-31 22:20:09
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_pdfwidgets_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-04 18:25:32
+#  Last modified 2022-01-31 22:20:09
 #  File has been updated.
 #  Successfully updated.
 
@@ -915,20 +924,20 @@ compiler_moc_source_clean:
 
 Grafica.pro:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-29 21:09:26.1086602
+#  Last modified 2022-02-02 20:49:15.278221
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/features/resources_functions.prf:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 /usr/bin/uic:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
@@ -945,7 +954,7 @@ compiler_moc_predefs_make_all: moc_predefs.h
 
 /usr/lib/qt/mkspecs/modules/qt_lib_quicktemplates2_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-21 08:01:38
+#  Last modified 2022-01-31 22:16:01
 #  File has been updated.
 #  Successfully updated.
 
@@ -957,7 +966,7 @@ compiler_moc_predefs_make_all: moc_predefs.h
 
 /usr/lib/qt/mkspecs/features/lex.prf:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
@@ -969,19 +978,19 @@ compiler_moc_predefs_make_all: moc_predefs.h
 
 /usr/lib/qt/mkspecs/modules/qt_lib_pdfwidgets.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-04 18:25:32
+#  Last modified 2022-01-31 22:20:09
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_eglfs_kms_support_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_kms_support_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
@@ -1023,7 +1032,7 @@ compiler_moc_objc_header_make_all:
 
 /usr/lib/qt/mkspecs/modules/qt_lib_webenginecoreheaders_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-04 18:25:32
+#  Last modified 2022-01-31 22:20:09
 #  File has been updated.
 #  Successfully updated.
 
@@ -1034,25 +1043,25 @@ compiler_yacc_impl_make_all:
 
 /usr/lib/qt/mkspecs/features/unix/thread.prf:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_pdf_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-04 18:25:32
+#  Last modified 2022-01-31 22:20:09
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_opengl_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_designer_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2021-10-23 10:08:48
+#  Last modified 2022-01-29 23:36:41
 #  File has been updated.
 #  Successfully updated.
 
@@ -1064,13 +1073,14 @@ compiler_yacc_impl_make_all:
 
 /usr/lib/qt/mkspecs/modules/qt_lib_quicktemplates2.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-21 08:01:38
+ 
+#  Last modified 2022-01-31 22:16:01
 #  File has been updated.
 #  Successfully updated.
 
 Grafica: ui_mainwindow.h main.o mainwindow.o funcionClass.o moc_mainwindow.o
 #  Implicit rule search has not been done.
-#  Last modified 2022-01-29 20:14:13.0574655
+#  Last modified 2022-02-02 22:03:48.0136794
 #  File has been updated.
 #  Needs to be updated (-q is set).
 # variable set hash-table stats:
@@ -1086,14 +1096,13 @@ Grafica: ui_mainwindow.h main.o mainwindow.o funcionClass.o moc_mainwindow.o
 
 /usr/lib/qt/mkspecs/modules/qt_lib_qmlworkerscript.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-08 10:36:20
+#  Last modified 2022-01-31 17:34:41
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_webenginewidgets.pri:
 #  Implicit rule search has been done.
- 
-#  Last modified 2022-01-04 18:25:32
+#  Last modified 2022-01-31 22:20:09
 #  File has been updated.
 #  Successfully updated.
 
@@ -1144,7 +1153,7 @@ src/mainwindow.cpp:
 
 /usr/lib/qt/mkspecs/common/unix.conf:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
@@ -1156,13 +1165,13 @@ src/mainwindow.cpp:
 
 /usr/lib/qt/mkspecs/modules/qt_lib_core.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_pdf.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-04 18:25:32
+#  Last modified 2022-01-31 22:20:09
 #  File has been updated.
 #  Successfully updated.
 
@@ -1174,19 +1183,19 @@ src/mainwindow.cpp:
 
 /usr/lib/qt/mkspecs/modules/qt_lib_quickshapes_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-08 10:36:20
+#  Last modified 2022-01-31 17:34:41
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/common/sanitize.conf:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_opengl.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
@@ -1198,19 +1207,19 @@ src/mainwindow.cpp:
 
 /usr/lib/qt/mkspecs/modules/qt_lib_service_support_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_quickwidgets.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-08 10:36:20
+#  Last modified 2022-01-31 17:34:41
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/features/qt_config.prf:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
@@ -1222,13 +1231,14 @@ src/mainwindow.cpp:
 
 /usr/lib/qt/mkspecs/modules/qt_lib_fontdatabase_support_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
+ 
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_dbus.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
@@ -1240,13 +1250,13 @@ src/mainwindow.cpp:
 
 /usr/lib/qt/mkspecs/modules/qt_lib_glx_support_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_location_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2021-11-22 00:37:05
+#  Last modified 2022-01-29 22:42:44
 #  File has been updated.
 #  Successfully updated.
 
@@ -1258,7 +1268,7 @@ src/mainwindow.cpp:
 
 /usr/lib/qt/mkspecs/features/spec_post.prf:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
@@ -1284,19 +1294,19 @@ all: Makefile Grafica
 
 /usr/lib/qt/mkspecs/features/exceptions.prf:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/features/default_post.prf:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_waylandcompositor_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:47:31
+#  Last modified 2022-01-30 13:15:52
 #  File has been updated.
 #  Successfully updated.
 
@@ -1320,32 +1330,32 @@ all: Makefile Grafica
 
 /usr/lib/qt/mkspecs/modules/qt_lib_devicediscovery_support_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_gui.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_quickcontrols2_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-21 08:01:38
+#  Last modified 2022-01-31 22:16:01
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_dbus_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 ui/mainwindow.ui:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-26 18:54:06.3492315
+#  Last modified 2022-02-02 22:02:06.9212728
 #  File has been updated.
 #  Successfully updated.
 
@@ -1356,7 +1366,7 @@ qmake_all: FORCE
 
 /usr/lib/qt/mkspecs/modules/qt_lib_uitools_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2021-10-23 10:08:48
+#  Last modified 2022-01-29 23:36:41
 #  File has been updated.
 #  Successfully updated.
 
@@ -1374,7 +1384,6 @@ main.cpp:
 
 /usr/lib/qt/mkspecs/modules/qt_KItemViews.pri:
 #  Implicit rule search has been done.
- 
 #  Last modified 2022-01-03 23:53:28
 #  File has been updated.
 #  Successfully updated.
@@ -1387,7 +1396,7 @@ main.cpp:
 
 /usr/lib/qt/mkspecs/modules/qt_lib_packetprotocol_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-08 10:36:20
+#  Last modified 2022-01-31 17:34:41
 #  File has been updated.
 #  Successfully updated.
 
@@ -1399,7 +1408,7 @@ main.cpp:
 
 /usr/lib/qt/mkspecs/modules/qt_lib_vulkan_support_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
@@ -1410,25 +1419,25 @@ compiler_uic_make_all: ui_mainwindow.h
 
 /usr/lib/qt/mkspecs/features/spec_pre.prf:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_qmlmodels.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-08 10:36:20
+#  Last modified 2022-01-31 17:34:41
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_quickparticles_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-08 10:36:20
+#  Last modified 2022-01-31 17:34:41
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_testlib.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
@@ -1459,7 +1468,7 @@ include/mainwindow.h:
 
 /usr/lib/qt/mkspecs/features/file_copies.prf:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
@@ -1471,43 +1480,44 @@ src/mainwindow.h:
 
 /usr/lib/qt/mkspecs/modules/qt_lib_uitools.pri:
 #  Implicit rule search has been done.
-#  Last modified 2021-10-23 10:08:48
+#  Last modified 2022-01-29 23:36:41
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_waylandclient.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:47:31
+#  Last modified 2022-01-30 13:15:52
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/features/unix/opengl.prf:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_core_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_qml_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-08 10:36:20
+#  Last modified 2022-01-31 17:34:41
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_multimedia.pri:
 #  Implicit rule search has been done.
-#  Last modified 2020-11-19 16:41:33
+#  Last modified 2022-01-30 11:25:44
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_texttospeech.pri:
 #  Implicit rule search has been done.
-#  Last modified 2020-11-19 16:52:13
+ 
+#  Last modified 2022-01-30 12:58:38
 #  File has been updated.
 #  Successfully updated.
 
@@ -1518,13 +1528,13 @@ compiler_rcc_make_all:
 
 /usr/lib/qt/mkspecs/modules/qt_lib_webenginewidgets_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-04 18:25:32
+#  Last modified 2022-01-31 22:20:09
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/features/warn_on.prf:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
@@ -1542,13 +1552,13 @@ compiler_rcc_make_all:
 
 /usr/lib/qt/mkspecs/modules/qt_lib_waylandcompositor.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:47:31
+#  Last modified 2022-01-30 13:15:52
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_multimediawidgets_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2020-11-19 16:41:33
+#  Last modified 2022-01-30 11:25:44
 #  File has been updated.
 #  Successfully updated.
 
@@ -1561,7 +1571,7 @@ moc_mainwindow.o: moc_mainwindow.cpp
 
 /usr/lib/qt/mkspecs/modules/qt_lib_linuxaccessibility_support_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
@@ -1573,13 +1583,13 @@ moc_mainwindow.o: moc_mainwindow.cpp
 
 /usr/lib/qt/mkspecs/modules/qt_lib_quick_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-08 10:36:20
+#  Last modified 2022-01-31 17:34:41
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_qmltest_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-08 10:36:20
+#  Last modified 2022-01-31 17:34:41
 #  File has been updated.
 #  Successfully updated.
 
@@ -1596,31 +1606,31 @@ compiler_moc_objc_header_clean:
 
 /usr/lib/qt/mkspecs/modules/qt_lib_help_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2021-10-23 10:08:48
+#  Last modified 2022-01-29 23:36:41
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_uiplugin.pri:
 #  Implicit rule search has been done.
-#  Last modified 2021-10-23 10:08:48
+#  Last modified 2022-01-29 23:36:41
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_webenginecore_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-04 18:25:32
+#  Last modified 2022-01-31 22:20:09
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_concurrent_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/common/g++-base.conf:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
@@ -1632,14 +1642,13 @@ include/funcion.hpp:
 
 /usr/lib/qt/mkspecs/modules/qt_lib_openglextensions_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_qml.pri:
 #  Implicit rule search has been done.
- 
-#  Last modified 2022-01-08 10:36:20
+#  Last modified 2022-01-31 17:34:41
 #  File has been updated.
 #  Successfully updated.
 
@@ -1656,25 +1665,25 @@ install: install_target FORCE
 
 /usr/lib/qt/mkspecs/modules/qt_lib_quickwidgets_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-08 10:36:20
+#  Last modified 2022-01-31 17:34:41
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/features/resolve_config.prf:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/features/exclusive_builds.prf:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/linux-g++/qmake.conf:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
@@ -1685,7 +1694,7 @@ compiler_lex_clean:
 
 /usr/lib/qt/mkspecs/common/linux.conf:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
@@ -1696,19 +1705,19 @@ compiler_moc_header_make_all: moc_mainwindow.cpp
 
 /usr/lib/qt/mkspecs/modules/qt_lib_positioning.pri:
 #  Implicit rule search has been done.
-#  Last modified 2021-11-22 00:37:05
+#  Last modified 2022-01-29 22:42:44
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/features/uic.prf:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_webengine_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-04 18:25:32
+#  Last modified 2022-01-31 22:20:09
 #  File has been updated.
 #  Successfully updated.
 
@@ -1720,19 +1729,19 @@ compiler_moc_header_make_all: moc_mainwindow.cpp
 
 /usr/lib/qt/mkspecs/modules/qt_lib_svg_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-08 10:43:29
+#  Last modified 2022-01-30 13:01:54
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/features/testcase_targets.prf:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_positioningquick_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2021-11-22 00:37:05
+#  Last modified 2022-01-29 22:42:44
 #  File has been updated.
 #  Successfully updated.
 
@@ -1752,25 +1761,25 @@ funcionClass.o: src/funcionClass.cpp
 
 /usr/lib/qt/mkspecs/modules/qt_lib_x11extras.pri:
 #  Implicit rule search has been done.
-#  Last modified 2020-11-19 16:57:33
+#  Last modified 2022-01-30 13:31:24
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_network.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/qconfig.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_KUserFeedbackWidgets.pri:
 #  Implicit rule search has been done.
-#  Last modified 2020-02-05 15:34:34
+#  Last modified 2022-02-02 15:19:13
 #  File has been updated.
 #  Successfully updated.
 
@@ -1782,13 +1791,13 @@ funcionClass.o: src/funcionClass.cpp
 
 /usr/lib/qt/mkspecs/modules/qt_lib_network_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_multimediawidgets.pri:
 #  Implicit rule search has been done.
-#  Last modified 2020-11-19 16:41:33
+#  Last modified 2022-01-30 11:25:44
 #  File has been updated.
 #  Successfully updated.
 
@@ -1798,6 +1807,7 @@ compiler_moc_source_make_all:
 #  File has not been updated.
 
 /usr/lib/qt/mkspecs/modules/qt_Prison.pri:
+ 
 #  Implicit rule search has been done.
 #  Last modified 2022-01-04 00:28:25
 #  File has been updated.
@@ -1805,7 +1815,7 @@ compiler_moc_source_make_all:
 
 /usr/lib/qt/mkspecs/modules/qt_lib_webchannel.pri:
 #  Implicit rule search has been done.
-#  Last modified 2021-12-23 23:07:15
+#  Last modified 2022-01-29 23:45:11
 #  File has been updated.
 #  Successfully updated.
 
@@ -1823,19 +1833,19 @@ compiler_lex_make_all:
 
 /usr/lib/qt/mkspecs/modules/qt_lib_printsupport.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_xml.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_webenginecore.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-04 18:25:32
+#  Last modified 2022-01-31 22:20:09
 #  File has been updated.
 #  Successfully updated.
 
@@ -1870,44 +1880,43 @@ first: all
 
 /usr/lib/qt/mkspecs/modules/qt_lib_xml_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/common/g++-unix.conf:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_positioning_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2021-11-22 00:37:05
+#  Last modified 2022-01-29 22:42:44
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_testlib_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_multimedia_private.pri:
 #  Implicit rule search has been done.
- 
-#  Last modified 2020-11-19 16:41:33
+#  Last modified 2022-01-30 11:25:44
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_svg.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-08 10:43:29
+#  Last modified 2022-01-30 13:01:54
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/features/moc.prf:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
@@ -1918,13 +1927,13 @@ compiler_yacc_decl_clean:
 
 /usr/lib/qt/mkspecs/features/qmake_use.prf:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_qmldebug_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-08 10:36:20
+#  Last modified 2022-01-31 17:34:41
 #  File has been updated.
 #  Successfully updated.
 
@@ -1936,31 +1945,31 @@ compiler_yacc_decl_clean:
 
 /usr/lib/qt/mkspecs/modules/qt_lib_edid_support_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_sensors_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2020-11-19 15:49:20
+#  Last modified 2022-01-29 22:48:42
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_openglextensions.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_sql.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_KTextEditor.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-04 00:23:14
+#  Last modified 2022-01-31 16:17:18
 #  File has been updated.
 #  Successfully updated.
 
@@ -1992,25 +2001,25 @@ install_target: first FORCE
 
 /usr/lib/qt/mkspecs/modules/qt_lib_concurrent.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/features/qt.prf:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-28 12:41:56
+#  Last modified 2022-01-31 21:54:21
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_KUserFeedbackCore.pri:
 #  Implicit rule search has been done.
-#  Last modified 2020-02-05 15:34:34
+#  Last modified 2022-02-02 15:19:13
 #  File has been updated.
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_sensors.pri:
 #  Implicit rule search has been done.
-#  Last modified 2020-11-19 15:49:20
+#  Last modified 2022-01-29 22:48:42
 #  File has been updated.
 #  Successfully updated.
 
@@ -2022,7 +2031,7 @@ install_target: first FORCE
 
 /usr/lib/qt/mkspecs/modules/qt_lib_qmlworkerscript_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-08 10:36:20
+#  Last modified 2022-01-31 17:34:41
 #  File has been updated.
 #  Successfully updated.
 
@@ -2040,14 +2049,14 @@ install_target: first FORCE
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 2 (1) / strings = 286 / storage = 12017 B / avg = 42 B
+# strcache buffers: 2 (1) / strings = 287 / storage = 12022 B / avg = 41 B
 # current buf: size = 8162 B / used = 3872 B / count = 107 / avg = 36 B
-# other used: total = 8145 B / count = 179 / avg = 45 B
-# other free: total = 17 B / max = 17 B / min = 17 B / avg = 17 B
+# other used: total = 8150 B / count = 180 / avg = 45 B
+# other free: total = 12 B / max = 12 B / min = 12 B / avg = 12 B
 
-# strcache performance: lookups = 823 / hit rate = 65%
+# strcache performance: lookups = 824 / hit rate = 65%
 # hash-table stats:
-# Load=286/8192=3%, Rehash=0, Collisions=12/823=1%
-# Finished Make data base on Sat Jan 29 21:14:26 2022
+# Load=287/8192=4%, Rehash=0, Collisions=12/824=1%
+# Finished Make data base on Wed Feb  2 22:05:26 2022
 
  

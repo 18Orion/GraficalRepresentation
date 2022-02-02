@@ -6,6 +6,10 @@
 #include <QMainWindow>
 #include <iostream>
 #include <QGraphicsView>
+#include <QListView>
+#include <QStringListModel>
+#include <QString>
+#include <vector>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -22,11 +26,12 @@ class MainWindow : public QMainWindow
         ~MainWindow();
     private slots:
         void on_enter_clicked();
-
+        //void on_lista_clicked();
     private:
-        QPointF center;
+        //vector<vector<QGraphicsLineItem>> itemsList;
+        QStringListModel *model = new QStringListModel();
+        QList<QString> functionList;
         QGraphicsScene *scene;
-        string function;
         funcion *fn=new funcion();
         void represent(string);
         Ui::MainWindow *ui;
