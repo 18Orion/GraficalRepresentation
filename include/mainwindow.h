@@ -10,6 +10,7 @@
 #include <QStringListModel>
 #include <QString>
 #include <vector>
+#include <QTextItem>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }

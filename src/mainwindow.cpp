@@ -15,7 +15,16 @@ MainWindow::MainWindow(QWidget *parent)
     represent("0,0");
     model->setStringList(functionList);
     ui->lista->setModel(model);
-    ui->grafica->scale(-1, 1);
+    ui->grafica->scale(1,-1);
+    /*
+    for(i=-ui->grafica->width()/20;i<ui->grafica->width()/20;i++){
+
+    }
+    for(i=-ui->grafica->height()/20;i<ui->grafica->height()/20;i++){
+        QGraphicsTextItem *text=scene->addText(QString::number(i));
+        text->setPos(0,i*10);
+    }
+    delete text;*/
 }
 
 MainWindow::~MainWindow()
@@ -24,6 +33,7 @@ MainWindow::~MainWindow()
     delete ui;
     delete scene;
     delete model;
+
 }
 
 void MainWindow::on_enter_clicked(){
