@@ -5,6 +5,8 @@
 #include <QWidget>
 #include <QMainWindow>
 #include <iostream>
+#include <QGraphicsSimpleTextItem>
+#include <QGraphicsScene>
 #include <QGraphicsView>
 #include <QListView>
 #include <QStringListModel>
@@ -27,14 +29,20 @@ class MainWindow : public QMainWindow
         ~MainWindow();
     private slots:
         void on_enter_clicked();
-        //void on_lista_clicked();
+        void on_zoomIn_clicked();
+        void on_zoomOut_clicked();
+        void on_NewPage_clicked();
     private:
-        //vector<vector<QGraphicsLineItem>> itemsList;
+        void represent(string);
+        void nuevaPagina();
+        void paintCoordinateNumbers();
+        void paintNet(int spacing);
+        int zoom=1;
         QStringListModel *model = new QStringListModel();
         QList<QString> functionList;
         QGraphicsScene *scene;
         funcion *fn=new funcion();
-        void represent(string);
+
         Ui::MainWindow *ui;
         int i=0;
 };

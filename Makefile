@@ -54,10 +54,10 @@ OBJECTS_DIR   = ./
 
 SOURCES       = main.cpp \
 		src/mainwindow.cpp \
-		src/funcionClass.cpp moc_mainwindow.cpp
+		src/funcion.cpp moc_mainwindow.cpp
 OBJECTS       = main.o \
 		mainwindow.o \
-		funcionClass.o \
+		funcion.o \
 		moc_mainwindow.o
 DIST          = /usr/lib/qt/mkspecs/features/spec_pre.prf \
 		/usr/lib/qt/mkspecs/common/unix.conf \
@@ -278,9 +278,9 @@ DIST          = /usr/lib/qt/mkspecs/features/spec_pre.prf \
 		/usr/lib/qt/mkspecs/features/yacc.prf \
 		/usr/lib/qt/mkspecs/features/lex.prf \
 		Grafica.pro include/mainwindow.h \
-		src/funcionClass.cpp main.cpp \
+		include/funcion.hpp main.cpp \
 		src/mainwindow.cpp \
-		src/funcionClass.cpp
+		src/funcion.cpp
 QMAKE_TARGET  = Grafica
 DESTDIR       = 
 TARGET        = Grafica
@@ -746,8 +746,8 @@ distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents /usr/lib/qt/mkspecs/features/data/dummy.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents include/mainwindow.h src/funcionClass.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents main.cpp src/mainwindow.cpp src/funcionClass.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents include/mainwindow.h include/funcion.hpp $(DISTDIR)/
+	$(COPY_FILE) --parents main.cpp src/mainwindow.cpp src/funcion.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents ui/mainwindow.ui $(DISTDIR)/
 
 
@@ -819,8 +819,8 @@ mainwindow.o: src/mainwindow.cpp src/mainwindow.h \
 		ui_mainwindow.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o src/mainwindow.cpp
 
-funcionClass.o: src/funcionClass.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o funcionClass.o src/funcionClass.cpp
+funcion.o: src/funcion.cpp src/funcion.hpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o funcion.o src/funcion.cpp
 
 moc_mainwindow.o: moc_mainwindow.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_mainwindow.o moc_mainwindow.cpp

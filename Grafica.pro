@@ -11,11 +11,11 @@ CONFIG += c++11
 SOURCES += \
     main.cpp \
     src/mainwindow.cpp \
-    src/funcionClass.cpp
+    src/funcion.cpp
 
 HEADERS += \
     include/mainwindow.h \
-    src/funcionClass.cpp
+    include/funcion.hpp
 FORMS += \
     ui/mainwindow.ui
 

@@ -6,25 +6,8 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    QPen pen(Qt::red);
-    scene=new QGraphicsScene(ui->grafica->width()/2,ui->grafica->height()/2,-ui->grafica->width(),-ui->grafica->height());
-    scene->addLine(QLineF(-ui->grafica->width()/2,0,ui->grafica->width()/2,0),pen);
-    scene->addLine(QLineF(0,-ui->grafica->height()/2,0,ui->grafica->height()/2),pen);
-    scene->setBackgroundBrush(Qt::white);
-    ui->grafica->setScene(scene);
-    represent("0,0");
-    model->setStringList(functionList);
-    ui->lista->setModel(model);
-    ui->grafica->scale(1,-1);
-    /*
-    for(i=-ui->grafica->width()/20;i<ui->grafica->width()/20;i++){
+    nuevaPagina();
 
-    }
-    for(i=-ui->grafica->height()/20;i<ui->grafica->height()/20;i++){
-        QGraphicsTextItem *text=scene->addText(QString::number(i));
-        text->setPos(0,i*10);
-    }
-    delete text;*/
 }
 
 MainWindow::~MainWindow()
@@ -33,11 +16,22 @@ MainWindow::~MainWindow()
     delete ui;
     delete scene;
     delete model;
-
 }
 
 void MainWindow::on_enter_clicked(){
     represent(ui->functionEdit->toPlainText().toStdString());
+}
+
+void MainWindow::on_zoomIn_clicked(){
+    zoom++;
+    ui->grafica->scale(1.25,1.25);
+}
+
+void MainWindow::on_zoomOut_clicked(){
+    if(zoom>1){
+        zoom--;
+        ui->grafica->scale(0.75,0.75);
+    }
 }
 
 void MainWindow::represent(string input){
@@ -66,6 +60,58 @@ void MainWindow::represent(string input){
             if((isdigit(input[i])||input[i]=='.')&&xGot) y+=input[i];
             if(input[i]==',') xGot=true;
         }
-        scene->addEllipse(stod(x)-5,stod(y)-5, 10,10);
+        scene->addEllipse(stod(x)-1,stod(y)-1,2,2);
+    }
+}
+
+void MainWindow::on_NewPage_clicked(){
+    nuevaPagina();
+}
+
+void MainWindow::nuevaPagina(){
+    scene=new QGraphicsScene(ui->grafica->width()/2,ui->grafica->height()/2,-ui->grafica->width(),-ui->grafica->height());
+    paintNet(50);
+    scene->setBackgroundBrush(Qt::white);
+    ui->grafica->setScene(scene);
+    //ui->grafica->scale(1,-1);
+    ui->grafica->setTransform(QTransform::fromScale(1, -1));
+    represent("0,0");
+    functionList.clear();
+    model->setStringList(functionList);
+    ui->lista->setModel(model);
+    paintCoordinateNumbers();
+}
+
+void MainWindow::paintCoordinateNumbers(){
+    for(int i=0;i<=ui->grafica->width()/2;i+=50){
+        QGraphicsSimpleTextItem *text = scene->addSimpleText(QString::number(i));
+        text->setPos(i,-1);
+        text->setTransform(QTransform::fromScale(1, -1));
+        text = scene->addSimpleText(QString::number(-i));
+        text->setPos(-i,-1);
+        text->setTransform(QTransform::fromScale(1, -1));
+    }
+    for(int i=50;i<=ui->grafica->height()/2;i+=50){
+        QGraphicsSimpleTextItem *text = scene->addSimpleText(QString::number(i));
+        text->setPos(-1,i);
+        text->setTransform(QTransform::fromScale(1, -1));
+        text = scene->addSimpleText(QString::number(-i));
+        text->setPos(-1,-i);
+        text->setTransform(QTransform::fromScale(1, -1));
+    }
+}
+
+void MainWindow::paintNet(int spacing){
+    QPen netPen(Qt::gray);
+    QPen axisPen(Qt::blue);
+    scene->addLine(QLineF(-ui->grafica->width()/2,0,ui->grafica->width()/2,0),axisPen);
+    scene->addLine(QLineF(0,-ui->grafica->height()/2,0,ui->grafica->height()/2),axisPen);
+    for(i=spacing;i<ui->grafica->width()/2;i+=spacing){
+        scene->addLine(QLineF(i,-ui->grafica->width()/2,i,ui->grafica->width()/2),netPen);
+        scene->addLine(QLineF(-i,-ui->grafica->width()/2,-i,ui->grafica->width()/2),netPen);
+    }
+    for(i=spacing;i<ui->grafica->height()/2;i+=spacing){
+        scene->addLine(QLineF(-ui->grafica->width()/2,i,ui->grafica->width()/2,i),netPen);
+        scene->addLine(QLineF(-ui->grafica->width()/2,-i,ui->grafica->width()/2,-i),netPen);
     }
 }
