@@ -11,11 +11,13 @@ CONFIG += c++11
 SOURCES += \
     main.cpp \
     src/mainwindow.cpp \
-    src/funcion.cpp
+    src/funcion.cpp \
+    src/EquationSystem.cpp
 
 HEADERS += \
     include/mainwindow.h \
-    include/funcion.hpp
+    include/funcion.hpp \
+    include/EquationSystem.hpp
 FORMS += \
     ui/mainwindow.ui
 

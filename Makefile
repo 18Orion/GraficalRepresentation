@@ -54,10 +54,12 @@ OBJECTS_DIR   = ./
 
 SOURCES       = main.cpp \
 		src/mainwindow.cpp \
-		src/funcion.cpp moc_mainwindow.cpp
+		src/funcion.cpp \
+		src/EquationSystem.cpp moc_mainwindow.cpp
 OBJECTS       = main.o \
 		mainwindow.o \
 		funcion.o \
+		EquationSystem.o \
 		moc_mainwindow.o
 DIST          = /usr/lib/qt/mkspecs/features/spec_pre.prf \
 		/usr/lib/qt/mkspecs/common/unix.conf \
@@ -278,9 +280,11 @@ DIST          = /usr/lib/qt/mkspecs/features/spec_pre.prf \
 		/usr/lib/qt/mkspecs/features/yacc.prf \
 		/usr/lib/qt/mkspecs/features/lex.prf \
 		Grafica.pro include/mainwindow.h \
-		include/funcion.hpp main.cpp \
+		include/funcion.hpp \
+		include/EquationSystem.hpp main.cpp \
 		src/mainwindow.cpp \
-		src/funcion.cpp
+		src/funcion.cpp \
+		src/EquationSystem.cpp
 QMAKE_TARGET  = Grafica
 DESTDIR       = 
 TARGET        = Grafica
@@ -746,8 +750,8 @@ distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents /usr/lib/qt/mkspecs/features/data/dummy.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents include/mainwindow.h include/funcion.hpp $(DISTDIR)/
-	$(COPY_FILE) --parents main.cpp src/mainwindow.cpp src/funcion.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents include/mainwindow.h include/funcion.hpp include/EquationSystem.hpp $(DISTDIR)/
+	$(COPY_FILE) --parents main.cpp src/mainwindow.cpp src/funcion.cpp src/EquationSystem.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents ui/mainwindow.ui $(DISTDIR)/
 
 
@@ -784,6 +788,7 @@ compiler_moc_header_make_all: moc_mainwindow.cpp
 compiler_moc_header_clean:
 	-$(DEL_FILE) moc_mainwindow.cpp
 moc_mainwindow.cpp: include/mainwindow.h \
+		include/EquationSystem.hpp \
 		include/funcion.hpp \
 		moc_predefs.h \
 		/usr/bin/moc
@@ -811,16 +816,22 @@ compiler_clean: compiler_moc_predefs_clean compiler_moc_header_clean compiler_ui
 ####### Compile
 
 main.o: main.cpp include/mainwindow.h \
+		include/EquationSystem.hpp \
 		include/funcion.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o main.cpp
 
 mainwindow.o: src/mainwindow.cpp src/mainwindow.h \
+		src/EquationSystem.hpp \
 		src/funcion.hpp \
 		ui_mainwindow.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o src/mainwindow.cpp
 
 funcion.o: src/funcion.cpp src/funcion.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o funcion.o src/funcion.cpp
+
+EquationSystem.o: src/EquationSystem.cpp src/EquationSystem.hpp \
+		src/funcion.hpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o EquationSystem.o src/EquationSystem.cpp
 
 moc_mainwindow.o: moc_mainwindow.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_mainwindow.o moc_mainwindow.cpp

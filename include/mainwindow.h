@@ -1,7 +1,8 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
-#include "funcion.hpp"
+//#include "funcion.hpp"
+#include "EquationSystem.hpp"
 #include <QWidget>
 #include <QMainWindow>
 #include <iostream>
@@ -27,22 +28,29 @@ class MainWindow : public QMainWindow
     public:
         MainWindow(QWidget *parent = nullptr);
         ~MainWindow();
+        //void cleanPointers();
     private slots:
         void on_enter_clicked();
         void on_zoomIn_clicked();
         void on_zoomOut_clicked();
         void on_NewPage_clicked();
+        void on_coordinateCheck_toggled(bool checked);
+        void on_netCheck_toggled(bool checked);
     private:
         void represent(string);
-        void nuevaPagina();
-        void paintCoordinateNumbers();
+        void newPage();
+        void paintCoordinateNumbers(int spacing);
         void paintNet(int spacing);
-        int zoom=1;
+        void eraseNet();
+        void eraseCoordinateNumbers();
+        double zoom=1;
         QStringListModel *model = new QStringListModel();
         QList<QString> functionList;
+        QList<QGraphicsSimpleTextItem*> coordinateNumbers;
+        QList<QGraphicsLineItem*> net;
         QGraphicsScene *scene;
         funcion *fn=new funcion();
-
+        equationSystem *eq=new equationSystem();
         Ui::MainWindow *ui;
         int i=0;
 };
