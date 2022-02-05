@@ -193,7 +193,7 @@ p, li { white-space: pre-wrap; }
      <enum>Qt::RightToLeft</enum>
     </property>
     <property name="text">
-     <string>Función: </string>
+     <string>Function: </string>
     </property>
    </widget>
    <widget class="QLabel" name="label_2">
@@ -243,7 +243,7 @@ p, li { white-space: pre-wrap; }
      </palette>
     </property>
     <property name="text">
-     <string>Ajustes</string>
+     <string>Settings</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_3">
@@ -293,7 +293,7 @@ p, li { white-space: pre-wrap; }
      </palette>
     </property>
     <property name="text">
-     <string>Profundidad del calculo</string>
+     <string>Calculate depth</string>
     </property>
    </widget>
    <widget class="QPushButton" name="NewPage">
@@ -306,7 +306,7 @@ p, li { white-space: pre-wrap; }
      </rect>
     </property>
     <property name="text">
-     <string>Nueva página</string>
+     <string>New page</string>
     </property>
    </widget>
    <widget class="QLabel" name="zoom">
