@@ -5,7 +5,7 @@ This uses the function resolver library in https://github.com/18Orion/Mathematic
 ## **Compilation**
 For compiling you will need **qt5, make and qmake**.
 For downloading and compiling the demonstration: 
->git clone https://github.com/18Orion/GraphicalRepresentation.git \n
->cd GraphicalRepresentation \n
->qmake \n
+>git clone https://github.com/18Orion/GraphicalRepresentation.git  
+>cd GraphicalRepresentation  
+>qmake  
 >make
