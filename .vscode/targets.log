@@ -1,14 +1,12 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # GNU Make 4.3
- 
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
- 
 
-# Make data base, printed on Sat Feb  5 16:17:37 2022
+# Make data base, printed on Sat Feb  5 21:46:30 2022
 
 # Variables
 
@@ -23,7 +21,8 @@ NO_AT_BRIDGE = 1
 # makefile (from 'Makefile', line 44)
 AR = ar cqs
 # makefile (from 'Makefile', line 64)
-DIST = /usr/lib/qt/mkspecs/features/spec_pre.prf /usr/lib/qt/mkspecs/common/unix.conf /usr/lib/qt/mkspecs/common/linux.conf /usr/lib/qt/mkspecs/common/sanitize.conf /usr/lib/qt/mkspecs/common/gcc-base.conf /usr/lib/qt/mkspecs/common/gcc-base-unix.conf /usr/lib/qt/mkspecs/common/g++-base.conf /usr/lib/qt/mkspecs/common/g++-unix.conf /usr/lib/qt/mkspecs/qconfig.pri /usr/lib/qt/mkspecs/modules/qt_Attica.pri /usr/lib/qt/mkspecs/modules/qt_Baloo.pri /usr/lib/qt/mkspecs/modules/qt_BluezQt.pri /usr/lib/qt/mkspecs/modules/qt_KActivities.pri /usr/lib/qt/mkspecs/modules/qt_KActivitiesStats.pri /usr/lib/qt/mkspecs/modules/qt_KArchive.pri /usr/lib/qt/mkspecs/modules/qt_KAuth.pri /usr/lib/qt/mkspecs/modules/qt_KAuthCore.pri /usr/lib/qt/mkspecs/modules/qt_KBookmarks.pri /usr/lib/qt/mkspecs/modules/qt_KCMUtils.pri /usr/lib/qt/mkspecs/modules/qt_KCodecs.pri /usr/lib/qt/mkspecs/modules/qt_KCompletion.pri /usr/lib/qt/mkspecs/modules/qt_KConfigCore.pri /usr/lib/qt/mkspecs/modules/qt_KConfigGui.pri /usr/lib/qt/mkspecs/modules/qt_KConfigWidgets.pri /usr/lib/qt/mkspecs/modules/qt_KContacts.pri /usr/lib/qt/mkspecs/modules/qt_KCoreAddons.pri /usr/lib/qt/mkspecs/modules/qt_KCrash.pri /usr/lib/qt/mkspecs/modules/qt_KDBusAddons.pri /usr/lib/qt/mkspecs/modules/qt_KDeclarative.pri /usr/lib/qt/mkspecs/modules/qt_KDESu.pri /usr/lib/qt/mkspecs/modules/qt_KDNSSD.pri /usr/lib/qt/mkspecs/modules/qt_KDSoapClient.pri /usr/lib/qt/mkspecs/modules/qt_KDSoapServer.pri /usr/lib/qt/mkspecs/modules/qt_KEmoticons.pri /usr/lib/qt/mkspecs/modules/qt_KFileMetaData.pri /usr/lib/qt/mkspecs/modules/qt_KGlobalAccel.pri /usr/lib/qt/mkspecs/modules/qt_KGuiAddons.pri /usr/lib/qt/mkspecs/modules/qt_KHolidays.pri /usr/lib/qt/mkspecs/modules/qt_KI18n.pri /usr/lib/qt/mkspecs/modules/qt_KIconThemes.pri /usr/lib/qt/mkspecs/modules/qt_KIdleTime.pri /usr/lib/qt/mkspecs/modules/qt_KIOCore.pri /usr/lib/qt/mkspecs/modules/qt_KIOFileWidgets.pri /usr/lib/qt/mkspecs/modules/qt_KIOGui.pri /usr/lib/qt/mkspecs/modules/qt_KIOWidgets.pri /usr/lib/qt/mkspecs/modules/qt_Kirigami2.pri /usr/lib/qt/mkspecs/modules/qt_KItemModels.pri /usr/lib/qt/mkspecs/modules/qt_KItemViews.pri /usr/lib/qt/mkspecs/modules/qt_KJobWidgets.pri /usr/lib/qt/mkspecs/modules/qt_KJS.pri /usr/lib/qt/mkspecs/modules/qt_KJSApi.pri /usr/lib/qt/mkspecs/modules/qt_KNewStuff.pri /usr/lib/qt/mkspecs/modules/qt_KNewStuffCore.pri /usr/lib/qt/mkspecs/modules/qt_KNotifications.pri /usr/lib/qt/mkspecs/modules/qt_KNotifyConfig.pri /usr/lib/qt/mkspecs/modules/qt_KNTLM.pri /usr/lib/qt/mkspecs/modules/qt_KParts.pri /usr/lib/qt/mkspecs/modules/qt_KPeople.pri /usr/lib/qt/mkspecs/modules/qt_KPeopleWidgets.pri /usr/lib/qt/mkspecs/modules/qt_KPty.pri /usr/lib/qt/mkspecs/modules/qt_KRunner.pri /usr/lib/qt/mkspecs/modules/qt_KScreen.pri /usr/lib/qt/mkspecs/modules/qt_KService.pri /usr/lib/qt/mkspecs/modules/qt_KSyntaxHighlighting.pri /usr/lib/qt/mkspecs/modules/qt_KTextEditor.pri /usr/lib/qt/mkspecs/modules/qt_KTextWidgets.pri /usr/lib/qt/mkspecs/modules/qt_KUnitConversion.pri /usr/lib/qt/mkspecs/modules/qt_KUserFeedbackCore.pri /usr/lib/qt/mkspecs/modules/qt_KUserFeedbackWidgets.pri /usr/lib/qt/mkspecs/modules/qt_KWallet.pri /usr/lib/qt/mkspecs/modules/qt_KWaylandClient.pri /usr/lib/qt/mkspecs/modules/qt_KWaylandServer.pri /usr/lib/qt/mkspecs/modules/qt_KWidgetsAddons.pri /usr/lib/qt/mkspecs/modules/qt_KWindowSystem.pri /usr/lib/qt/mkspecs/modules/qt_KXmlGui.pri /usr/lib/qt/mkspecs/modules/qt_lib_accessibility_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_bootstrap_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_concurrent.pri /usr/lib/qt/mkspecs/modules/qt_lib_concurrent_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_core.pri /usr/lib/qt/mkspecs/modules/qt_lib_core_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_dbus.pri /usr/lib/qt/mkspecs/modules/qt_lib_dbus_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_designer.pri /usr/lib/qt/mkspecs/modules/qt_lib_designer_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_designercomponents_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_devicediscovery_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_edid_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_egl_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_eglfs_kms_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_eglfsdeviceintegration_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_eventdispatcher_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_fb_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_fontdatabase_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_glx_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_gui.pri /usr/lib/qt/mkspecs/modules/qt_lib_gui_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_help.pri /usr/lib/qt/mkspecs/modules/qt_lib_help_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_input_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_kms_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_linuxaccessibility_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_location.pri /usr/lib/qt/mkspecs/modules/qt_lib_location_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_multimedia.pri /usr/lib/qt/mkspecs/modules/qt_lib_multimedia_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_multimediagsttools_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_multimediawidgets.pri /usr/lib/qt/mkspecs/modules/qt_lib_multimediawidgets_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_network.pri /usr/lib/qt/mkspecs/modules/qt_lib_network_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_opengl.pri /usr/lib/qt/mkspecs/modules/qt_lib_opengl_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_openglextensions.pri /usr/lib/qt/mkspecs/modules/qt_lib_openglextensions_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_packetprotocol_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_pdf.pri /usr/lib/qt/mkspecs/modules/qt_lib_pdf_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_pdfwidgets.pri /usr/lib/qt/mkspecs/modules/qt_lib_pdfwidgets_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_platformcompositor_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_positioning.pri /usr/lib/qt/mkspecs/modules/qt_lib_positioning_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_positioningquick.pri /usr/lib/qt/mkspecs/modules/qt_lib_positioningquick_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_printsupport.pri /usr/lib/qt/mkspecs/modules/qt_lib_printsupport_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_qml.pri /usr/lib/qt/mkspecs/modules/qt_lib_qml_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_qmldebug_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_qmldevtools_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_qmlmodels.pri /usr/lib/qt/mkspecs/modules/qt_lib_qmlmodels_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_qmltest.pri /usr/lib/qt/mkspecs/modules/qt_lib_qmltest_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_qmlworkerscript.pri /usr/lib/qt/mkspecs/modules/qt_lib_qmlworkerscript_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_qtmultimediaquicktools_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_quick.pri /usr/lib/qt/mkspecs/modules/qt_lib_quick_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_quickcontrols2.pri /usr/lib/qt/mkspecs/modules/qt_lib_quickcontrols2_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_quickparticles_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_quickshapes_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_quicktemplates2.pri /usr/lib/qt/mkspecs/modules/qt_lib_quicktemplates2_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_quickwidgets.pri /usr/lib/qt/mkspecs/modules/qt_lib_quickwidgets_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_sensors.pri /usr/lib/qt/mkspecs/modules/qt_lib_sensors_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_service_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_sql.pri /usr/lib/qt/mkspecs/modules/qt_lib_sql_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_svg.pri /usr/lib/qt/mkspecs/modules/qt_lib_svg_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_testlib.pri /usr/lib/qt/mkspecs/modules/qt_lib_testlib_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_texttospeech.pri /usr/lib/qt/mkspecs/modules/qt_lib_texttospeech_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_theme_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_uiplugin.pri /usr/lib/qt/mkspecs/modules/qt_lib_uitools.pri /usr/lib/qt/mkspecs/modules/qt_lib_uitools_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_vulkan_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_waylandclient.pri /usr/lib/qt/mkspecs/modules/qt_lib_waylandclient_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_waylandcompositor.pri /usr/lib/qt/mkspecs/modules/qt_lib_waylandcompositor_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_webchannel.pri /usr/lib/qt/mkspecs/modules/qt_lib_webchannel_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_webengine.pri /usr/lib/qt/mkspecs/modules/qt_lib_webengine_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_webenginecore.pri /usr/lib/qt/mkspecs/modules/qt_lib_webenginecore_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_webenginecoreheaders_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_webenginewidgets.pri /usr/lib/qt/mkspecs/modules/qt_lib_webenginewidgets_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_widgets.pri /usr/lib/qt/mkspecs/modules/qt_lib_widgets_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_x11extras.pri /usr/lib/qt/mkspecs/modules/qt_lib_x11extras_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_xcb_qpa_lib_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_xkbcommon_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_xml.pri /usr/lib/qt/mkspecs/modules/qt_lib_xml_private.pri /usr/lib/qt/mkspecs/modules/qt_phonon4qt5.pri /usr/lib/qt/mkspecs/modules/qt_Prison.pri /usr/lib/qt/mkspecs/modules/qt_QuickAddons.pri /usr/lib/qt/mkspecs/modules/qt_Solid.pri /usr/lib/qt/mkspecs/modules/qt_SonnetCore.pri /usr/lib/qt/mkspecs/modules/qt_SonnetUi.pri /usr/lib/qt/mkspecs/modules/qt_Syndication.pri /usr/lib/qt/mkspecs/modules/qt_ThreadWeaver.pri /usr/lib/qt/mkspecs/features/qt_functions.prf /usr/lib/qt/mkspecs/features/qt_config.prf /usr/lib/qt/mkspecs/linux-g++/qmake.conf /usr/lib/qt/mkspecs/features/spec_post.prf .qmake.stash /usr/lib/qt/mkspecs/features/exclusive_builds.prf /usr/lib/qt/mkspecs/features/toolchain.prf /usr/lib/qt/mkspecs/features/default_pre.prf /usr/lib/qt/mkspecs/features/resolve_config.prf /usr/lib/qt/mkspecs/features/default_post.prf /usr/lib/qt/mkspecs/features/warn_on.prf /usr/lib/qt/mkspecs/features/qt.prf /usr/lib/qt/mkspecs/features/resources_functions.prf /usr/lib/qt/mkspecs/features/resources.prf /usr/lib/qt/mkspecs/features/moc.prf /usr/lib/qt/mkspecs/features/link_ltcg.prf /usr/lib/qt/mkspecs/features/unix/opengl.prf /usr/lib/qt/mkspecs/features/uic.prf /usr/lib/qt/mkspecs/features/unix/thread.prf /usr/lib/qt/mkspecs/features/qmake_use.prf /usr/lib/qt/mkspecs/features/file_copies.prf /usr/lib/qt/mkspecs/features/testcase_targets.prf /usr/lib/qt/mkspecs/features/exceptions.prf /usr/lib/qt/mkspecs/features/yacc.prf /usr/lib/qt/mkspecs/features/lex.prf Grafica.pro include/mainwindow.h include/funcion.hpp include/EquationSystem.hpp main.cpp src/mainwindow.cpp src/funcion.cpp src/EquationSystem.cpp
+DIST = /usr/lib/qt/mkspecs/features/spec_pre.prf /usr/lib/qt/mkspecs/common/unix.conf /usr/lib/qt/mkspecs/common/linux.conf /usr/lib/qt/mkspecs/common/sanitize.conf /usr/lib/qt/mkspecs/common/gcc-base.conf /usr/lib/qt/mkspecs/common/gcc-base-unix.conf /usr/lib/qt/mkspecs/common/g++-base.conf /usr/lib/qt/mkspecs/common/g++-unix.conf /usr/lib/qt/mkspecs/qconfig.pri /usr/lib/qt/mkspecs/modules/qt_Attica.pri /usr/lib/qt/mkspecs/modules/qt_Baloo.pri /usr/lib/qt/mkspecs/modules/qt_BluezQt.pri /usr/lib/qt/mkspecs/modules/qt_KActivities.pri /usr/lib/qt/mkspecs/modules/qt_KActivitiesStats.pri /usr/lib/qt/mkspecs/modules/qt_KArchive.pri /usr/lib/qt/mkspecs/modules/qt_KAuth.pri /usr/lib/qt/mkspecs/modules/qt_KAuthCore.pri /usr/lib/qt/mkspecs/modules/qt_KBookmarks.pri /usr/lib/qt/mkspecs/modules/qt_KCMUtils.pri /usr/lib/qt/mkspecs/modules/qt_KCodecs.pri /usr/lib/qt/mkspecs/modules/qt_KCompletion.pri /usr/lib/qt/mkspecs/modules/qt_KConfigCore.pri /usr/lib/qt/mkspecs/modules/qt_KConfigGui.pri /usr/lib/qt/mkspecs/modules/qt_KConfigWidgets.pri /usr/lib/qt/mkspecs/modules/qt_KContacts.pri /usr/lib/qt/mkspecs/modules/qt_KCoreAddons.pri /usr/lib/qt/mkspecs/modules/qt_KCrash.pri /usr/lib/qt/mkspecs/modules/qt_KDBusAddons.pri /usr/lib/qt/mkspecs/modules/qt_KDeclarative.pri /usr/lib/qt/mkspecs/modules/qt_KDESu.pri /usr/lib/qt/mkspecs/modules/qt_KDNSSD.pri /usr/lib/qt/mkspecs/modules/qt_KDSoapClient.pri /usr/lib/qt/mkspecs/modules/qt_KDSoapServer.pri /usr/lib/qt/mkspecs/modules/qt_KEmoticons.pri /usr/lib/qt/mkspecs/modules/qt_KFileMetaData.pri /usr/lib/qt/mkspecs/modules/qt_KGlobalAccel.pri /usr/lib/qt/mkspecs/modules/qt_KGuiAddons.pri /usr/lib/qt/mkspecs/modules/qt_KHolidays.pri /usr/lib/qt/mkspecs/modules/qt_KI18n.pri /usr/lib/qt/mkspecs/modules/qt_KIconThemes.pri /usr/lib/qt/mkspecs/modules/qt_KIdleTime.pri /usr/lib/qt/mkspecs/modules/qt_KIOCore.pri /usr/lib/qt/mkspecs/modules/qt_KIOFileWidgets.pri /usr/lib/qt/mkspecs/modules/qt_KIOGui.pri /usr/lib/qt/mkspecs/modules/qt_KIOWidgets.pri /usr/lib/qt/mkspecs/modules/qt_Kirigami2.pri /usr/lib/qt/mkspecs/modules/qt_KItemModels.pri /usr/lib/qt/mkspecs/modules/qt_KItemViews.pri /usr/lib/qt/mkspecs/modules/qt_KJobWidgets.pri /usr/lib/qt/mkspecs/modules/qt_KJS.pri /usr/lib/qt/mkspecs/modules/qt_KJSApi.pri /usr/lib/qt/mkspecs/modules/qt_KNewStuff.pri /usr/lib/qt/mkspecs/modules/qt_KNewStuffCore.pri /usr/lib/qt/mkspecs/modules/qt_KNotifications.pri /usr/lib/qt/mkspecs/modules/qt_KNotifyConfig.pri /usr/lib/qt/mkspecs/modules/qt_KNTLM.pri /usr/lib/qt/mkspecs/modules/qt_KParts.pri /usr/lib/qt/mkspecs/modules/qt_KPeople.pri /usr/lib/qt/mkspecs/modules/qt_KPeopleWidgets.pri /usr/lib/qt/mkspecs/modules/qt_KPty.pri /usr/lib/qt/mkspecs/modules/qt_KRunner.pri /usr/lib/qt/mkspecs/modules/qt_KScreen.pri /usr/lib/qt/mkspecs/modules/qt_KService.pri /usr/lib/qt/mkspecs/modules/qt_KSyntaxHighlighting.pri /usr/lib/qt/mkspecs/modules/qt_KTextEditor.pri /usr/lib/qt/mkspecs/modules/qt_KTextWidgets.pri /usr/lib/qt/mkspecs/modules/qt_KUnitConversion.pri /usr/lib/qt/mkspecs/modules/qt_KUserFeedbackCore.pri /usr/lib/qt/mkspecs/modules/qt_KUserFeedbackWidgets.pri /usr/lib/qt/mkspecs/modules/qt_KWallet.pri /usr/lib/qt/mkspecs/modules/qt_KWaylandClient.pri /usr/lib/qt/mkspecs/modules/qt_KWaylandServer.pri /usr/lib/qt/mkspecs/modules/qt_KWidgetsAddons.pri /usr/lib/qt/mkspecs/modules/qt_KWindowSystem.pri /usr/lib/qt/mkspecs/modules/qt_KXmlGui.pri /usr/lib/qt/mkspecs/modules/qt_lib_accessibility_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_bootstrap_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_concurrent.pri /usr/lib/qt/mkspecs/modules/qt_lib_concurrent_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_core.pri /usr/lib/qt/mkspecs/modules/qt_lib_core_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_dbus.pri /usr/lib/qt/mkspecs/modules/qt_lib_dbus_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_designer.pri /usr/lib/qt/mkspecs/modules/qt_lib_designer_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_designercomponents_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_devicediscovery_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_edid_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_egl_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_eglfs_kms_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_eglfsdeviceintegration_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_eventdispatcher_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_fb_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_fontdatabase_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_glx_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_gui.pri /usr/lib/qt/mkspecs/modules/qt_lib_gui_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_help.pri /usr/lib/qt/mkspecs/modules/qt_lib_help_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_input_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_kms_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_linuxaccessibility_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_location.pri /usr/lib/qt/mkspecs/modules/qt_lib_location_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_multimedia.pri /usr/lib/qt/mkspecs/modules/qt_lib_multimedia_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_multimediagsttools_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_multimediawidgets.pri /usr/lib/qt/mkspecs/modules/qt_lib_multimediawidgets_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_network.pri /usr/lib/qt/mkspecs/modules/qt_lib_network_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_opengl.pri /usr/lib/qt/mkspecs/modules/qt_lib_opengl_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_openglextensions.pri /usr/lib/qt/mkspecs/modules/qt_lib_openglextensions_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_packetprotocol_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_pdf.pri /usr/lib/qt/mkspecs/modules/qt_lib_pdf_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_pdfwidgets.pri /usr/lib/qt/mkspecs/modules/qt_lib_pdfwidgets_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_platformcompositor_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_positioning.pri /usr/lib/qt/mkspecs/modules/qt_lib_positioning_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_positioningquick.pri /usr/lib/qt/mkspecs/modules/qt_lib_positioningquick_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_printsupport.pri /usr/lib/qt/mkspecs/modules/qt_lib_printsupport_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_qml.pri /usr/lib/qt/mkspecs/modules/qt_lib_qml_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_qmldebug_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_qmldevtools_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_qmlmodels.pri /usr/lib/qt/mkspecs/modules/qt_lib_qmlmodels_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_qmltest.pri /usr/lib/qt/mkspecs/modules/qt_lib_qmltest_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_qmlworkerscript.pri /usr/lib/qt/mkspecs/modules/qt_lib_qmlworkerscript_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_qtmultimediaquicktools_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_quick.pri /usr/lib/qt/mkspecs/modules/qt_lib_quick_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_quickcontrols2.pri /usr/lib/qt/mkspecs/modules/qt_lib_quickcontrols2_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_quickparticles_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_quickshapes_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_quicktemplates2.pri /usr/lib/qt/mkspecs/modules/qt_lib_quicktemplates2_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_quickwidgets.pri /usr/lib/qt/mkspecs/modules/qt_lib_quickwidgets_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_sensors.pri /usr/lib/qt/mkspecs/modules/qt_lib_sensors_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_service_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_sql.pri /usr/lib/qt/mkspecs/modules/qt_lib_sql_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_svg.pri /usr/lib/qt/mkspecs/modules/qt_lib_svg_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_testlib.pri /usr/lib/qt/mkspecs/modules/qt_lib_testlib_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_texttospeech.pri /usr/lib/qt/mkspecs/modules/qt_lib_texttospeech_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_theme_support_private.pri /usr/lib/qt/mkspecs/modules/qt_ 
+lib_uiplugin.pri /usr/lib/qt/mkspecs/modules/qt_lib_uitools.pri /usr/lib/qt/mkspecs/modules/qt_lib_uitools_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_vulkan_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_waylandclient.pri /usr/lib/qt/mkspecs/modules/qt_lib_waylandclient_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_waylandcompositor.pri /usr/lib/qt/mkspecs/modules/qt_lib_waylandcompositor_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_webchannel.pri /usr/lib/qt/mkspecs/modules/qt_lib_webchannel_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_webengine.pri /usr/lib/qt/mkspecs/modules/qt_lib_webengine_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_webenginecore.pri /usr/lib/qt/mkspecs/modules/qt_lib_webenginecore_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_webenginecoreheaders_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_webenginewidgets.pri /usr/lib/qt/mkspecs/modules/qt_lib_webenginewidgets_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_widgets.pri /usr/lib/qt/mkspecs/modules/qt_lib_widgets_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_x11extras.pri /usr/lib/qt/mkspecs/modules/qt_lib_x11extras_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_xcb_qpa_lib_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_xkbcommon_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_xml.pri /usr/lib/qt/mkspecs/modules/qt_lib_xml_private.pri /usr/lib/qt/mkspecs/modules/qt_phonon4qt5.pri /usr/lib/qt/mkspecs/modules/qt_Prison.pri /usr/lib/qt/mkspecs/modules/qt_QuickAddons.pri /usr/lib/qt/mkspecs/modules/qt_Solid.pri /usr/lib/qt/mkspecs/modules/qt_SonnetCore.pri /usr/lib/qt/mkspecs/modules/qt_SonnetUi.pri /usr/lib/qt/mkspecs/modules/qt_Syndication.pri /usr/lib/qt/mkspecs/modules/qt_ThreadWeaver.pri /usr/lib/qt/mkspecs/features/qt_functions.prf /usr/lib/qt/mkspecs/features/qt_config.prf /usr/lib/qt/mkspecs/linux-g++/qmake.conf /usr/lib/qt/mkspecs/features/spec_post.prf .qmake.stash /usr/lib/qt/mkspecs/features/exclusive_builds.prf /usr/lib/qt/mkspecs/features/toolchain.prf /usr/lib/qt/mkspecs/features/default_pre.prf /usr/lib/qt/mkspecs/features/resolve_config.prf /usr/lib/qt/mkspecs/features/default_post.prf /usr/lib/qt/mkspecs/features/warn_on.prf /usr/lib/qt/mkspecs/features/qt.prf /usr/lib/qt/mkspecs/features/resources_functions.prf /usr/lib/qt/mkspecs/features/resources.prf /usr/lib/qt/mkspecs/features/moc.prf /usr/lib/qt/mkspecs/features/link_ltcg.prf /usr/lib/qt/mkspecs/features/unix/opengl.prf /usr/lib/qt/mkspecs/features/uic.prf /usr/lib/qt/mkspecs/features/unix/thread.prf /usr/lib/qt/mkspecs/features/qmake_use.prf /usr/lib/qt/mkspecs/features/file_copies.prf /usr/lib/qt/mkspecs/features/testcase_targets.prf /usr/lib/qt/mkspecs/features/exceptions.prf /usr/lib/qt/mkspecs/features/yacc.prf /usr/lib/qt/mkspecs/features/lex.prf Grafica.pro include/mainwindow.h include/funcion.hpp include/EquationSystem.hpp main.cpp src/mainwindow.cpp src/funcion.cpp src/EquationSystem.cpp
 # environment
 GTK_RC_FILES = /etc/gtk/gtkrc:/home/sergio/.gtkrc:/home/sergio/.config/gtkrc
 # makefile (from 'Makefile', line 32)
@@ -31,7 +30,7 @@ QINSTALL_PROGRAM = /usr/bin/qmake -install qinstall -exe
 # makefile (from 'Makefile', line 41)
 LINK = g++
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-7aa5bad4-7362-42f6-b04a-5a83bd7cbd2d.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-294b6f99-45eb-45da-96c5-cbe19e9df903.sock
 # environment
 LC_NAME = es_ES.UTF-8
 # environment
@@ -133,7 +132,7 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 53186
+VSCODE_PID = 70431
 # environment
 XDG_SESSION_TYPE = wayland
 # automatic
@@ -155,7 +154,7 @@ DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
 # environment
-VSCODE_NLS_CONFIG = {"locale":"es","availableLanguages":{"*":"es"},"_languagePackId":"1a0efdb61e44124e1e10edd3da0bcd30.es","_translationsConfigFile":"/home/sergio/.config/Code - OSS/clp/1a0efdb61e44124e1e10edd3da0bcd30.es/tcf.json","_cacheRoot":"/home/sergio/.config/Code - OSS/clp/1a0efdb61e44124e1e10edd3da0bcd30.es","_resolvedLanguagePackCoreLocation":"/home/sergio/.config/Code - OSS/clp/1a0efdb61e44124e1e10edd3da0bcd30.es/5554b12acf27056905806867f251c859323ff7e9","_corruptedFile":"/home/sergio/.config/Code - OSS/clp/1a0efdb61e44124e1e10edd3da0bcd30.es/corrupted.info","_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"es","availableLanguages":{"*":"es"},"_languagePackId":"07cc90df3145cd8eee2b084b7a473a93.es","_translationsConfigFile":"/home/sergio/.config/Code - OSS/clp/07cc90df3145cd8eee2b084b7a473a93.es/tcf.json","_cacheRoot":"/home/sergio/.config/Code - OSS/clp/07cc90df3145cd8eee2b084b7a473a93.es","_resolvedLanguagePackCoreLocation":"/home/sergio/.config/Code - OSS/clp/07cc90df3145cd8eee2b084b7a473a93.es/5554b12acf27056905806867f251c859323ff7e9","_corruptedFile":"/home/sergio/.config/Code - OSS/clp/07cc90df3145cd8eee2b084b7a473a93.es/corrupted.info","_languagePackSupport":true}
 # makefile (from 'Makefile', line 27)
 COPY_DIR = cp -f -R
 # makefile (from 'Makefile', line 30)
@@ -173,7 +172,7 @@ MAKECMDGOALS := all
 # makefile (from 'Makefile', line 17)
 DEFINES = -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB
 # environment
-XDG_ACTIVATION_TOKEN = Orion;1644070180;699829;19343_TIME0
+XDG_ACTIVATION_TOKEN = Orion;1644093088;876738;59885_TIME0
 # environment
 SHLVL = 0
 # environment
@@ -196,6 +195,8 @@ MOTD_SHOWN = pam
 ^F = $(notdir $^)
 # environment
 LC_TIME = es_ES.UTF-8
+# environment
+INVOCATION_ID = e984e2faf3e44c50abb2ac78a971320e
 # environment
 VSCODE_LOG_NATIVE = false
 # environment
@@ -237,7 +238,7 @@ XDG_VTNR = 2
 # makefile (from 'Makefile', line 28)
 INSTALL_FILE = install -m 644 -p
 # environment
-SYSTEMD_EXEC_PID = 2628
+SYSTEMD_EXEC_PID = 59858
 # makefile (from 'Makefile', line 34)
 SYMLINK = ln -f -s
 # environment
@@ -255,6 +256,8 @@ COPY = cp -f
 # makefile (from 'Makefile', line 20)
 INCPATH = -I. -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I. -I. -I/usr/lib/qt/mkspecs/linux-g++
 # environment
+MANAGERPID = 2628
+# environment
 QT_WAYLAND_FORCE_DPI = 96
 # environment
 LC_MEASUREMENT = es_ES.UTF-8
@@ -262,15 +265,17 @@ LC_MEASUREMENT = es_ES.UTF-8
 MAKEFILE = Makefile
 # environment
 XKB_DEFAULT_LAYOUT = es
+ 
 # environment
 _ = /usr/bin/make
 # environment
 LC_PAPER = es_ES.UTF-8
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
- 
 # makefile (from 'Makefile', line 18)
 CFLAGS = -pipe -O2 -Wall -Wextra -D_REENTRANT -fPIC $(DEFINES)
+# environment
+JOURNAL_STREAM = 8:343914
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -328,7 +333,7 @@ KWIN_RESTART_COUNT = 1
 # environment
 LC_IDENTIFICATION = es_ES.UTF-8
 # variable set hash-table stats:
-# Load=157/1024=15%, Rehash=0, Collisions=19/192=10%
+# Load=160/1024=16%, Rehash=0, Collisions=20/192=10%
 
 # Pattern-specific Variable Values
 
@@ -336,10 +341,9 @@ LC_IDENTIFICATION = es_ES.UTF-8
 
 # Directories
 
- 
-# . (device 2052, inode 10472): 13 files, no impossibilities.
+# . (device 2052, inode 10472): 22 files, no impossibilities.
 
-# 13 files, no impossibilities in 1 directories.
+# 22 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -366,7 +370,6 @@ mocables: compiler_moc_header_make_all compiler_moc_objc_header_make_all compile
 
 /usr/lib/qt/mkspecs/modules/qt_lib_quick.pri:
 #  Implicit rule search has been done.
- 
 #  Last modified 2022-02-05 00:30:47
 #  File has been updated.
 #  Successfully updated.
@@ -380,8 +383,9 @@ dist: distdir FORCE
 
 funcion.o: src/funcion.cpp src/funcion.hpp
 #  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Last modified 2022-02-05 18:09:48.1696944
+#  File has been updated.
+#  Successfully updated.
 #  recipe to execute (from 'Makefile', line 830):
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o funcion.o src/funcion.cpp
 
@@ -427,8 +431,9 @@ check: first
 
 mainwindow.o: src/mainwindow.cpp src/mainwindow.h src/EquationSystem.hpp src/funcion.hpp ui_mainwindow.h
 #  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Last modified 2022-02-05 18:13:21.1517723
+#  File has been updated.
+#  Successfully updated.
 #  recipe to execute (from 'Makefile', line 827):
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o src/mainwindow.cpp
 
@@ -461,8 +466,9 @@ distclean: clean
 
 moc_predefs.h: /usr/lib/qt/mkspecs/features/data/dummy.cpp
 #  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Last modified 2022-02-05 18:09:48.9121484
+#  File has been updated.
+#  Successfully updated.
 #  recipe to execute (from 'Makefile', line 785):
 	g++ -pipe -O2 -std=gnu++11 -Wall -Wextra -dM -E -o moc_predefs.h /usr/lib/qt/mkspecs/features/data/dummy.cpp
 
@@ -480,14 +486,17 @@ moc_predefs.h: /usr/lib/qt/mkspecs/features/data/dummy.cpp
 
 # Not a target:
 include/EquationSystem.hpp:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2022-01-29 19:56:56.3056015
+#  File has been updated.
+#  Successfully updated.
 
 EquationSystem.o: src/EquationSystem.cpp src/EquationSystem.hpp src/funcion.hpp
 #  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+ 
+#  Last modified 2022-02-05 18:09:48.8864067
+#  File has been updated.
+#  Successfully updated.
 #  recipe to execute (from 'Makefile', line 834):
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o EquationSystem.o src/EquationSystem.cpp
 
@@ -563,7 +572,6 @@ uninstall_target: FORCE
 #  Last modified 2022-01-03 23:44:31
 #  File has been updated.
 #  Successfully updated.
- 
 
 /usr/lib/qt/mkspecs/modules/qt_lib_multimediagsttools_private.pri:
 #  Implicit rule search has been done.
@@ -708,15 +716,17 @@ benchmark: first
 
 # Not a target:
 src/funcion.cpp:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2022-01-29 16:12:17.8149548
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
 src/EquationSystem.hpp:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2022-01-29 19:56:56.3056015
+#  File has been updated.
+#  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_KDeclarative.pri:
 #  Implicit rule search has been done.
@@ -730,9 +740,10 @@ src/EquationSystem.hpp:
 #  File has been updated.
 #  Successfully updated.
 
+ 
 Makefile: Grafica.pro /usr/lib/qt/mkspecs/linux-g++/qmake.conf /usr/lib/qt/mkspecs/features/spec_pre.prf /usr/lib/qt/mkspecs/common/unix.conf /usr/lib/qt/mkspecs/common/linux.conf /usr/lib/qt/mkspecs/common/sanitize.conf /usr/lib/qt/mkspecs/common/gcc-base.conf /usr/lib/qt/mkspecs/common/gcc-base-unix.conf /usr/lib/qt/mkspecs/common/g++-base.conf /usr/lib/qt/mkspecs/common/g++-unix.conf /usr/lib/qt/mkspecs/qconfig.pri /usr/lib/qt/mkspecs/modules/qt_Attica.pri /usr/lib/qt/mkspecs/modules/qt_Baloo.pri /usr/lib/qt/mkspecs/modules/qt_BluezQt.pri /usr/lib/qt/mkspecs/modules/qt_KActivities.pri /usr/lib/qt/mkspecs/modules/qt_KActivitiesStats.pri /usr/lib/qt/mkspecs/modules/qt_KArchive.pri /usr/lib/qt/mkspecs/modules/qt_KAuth.pri /usr/lib/qt/mkspecs/modules/qt_KAuthCore.pri /usr/lib/qt/mkspecs/modules/qt_KBookmarks.pri /usr/lib/qt/mkspecs/modules/qt_KCMUtils.pri /usr/lib/qt/mkspecs/modules/qt_KCodecs.pri /usr/lib/qt/mkspecs/modules/qt_KCompletion.pri /usr/lib/qt/mkspecs/modules/qt_KConfigCore.pri /usr/lib/qt/mkspecs/modules/qt_KConfigGui.pri /usr/lib/qt/mkspecs/modules/qt_KConfigWidgets.pri /usr/lib/qt/mkspecs/modules/qt_KContacts.pri /usr/lib/qt/mkspecs/modules/qt_KCoreAddons.pri /usr/lib/qt/mkspecs/modules/qt_KCrash.pri /usr/lib/qt/mkspecs/modules/qt_KDBusAddons.pri /usr/lib/qt/mkspecs/modules/qt_KDeclarative.pri /usr/lib/qt/mkspecs/modules/qt_KDESu.pri /usr/lib/qt/mkspecs/modules/qt_KDNSSD.pri /usr/lib/qt/mkspecs/modules/qt_KDSoapClient.pri /usr/lib/qt/mkspecs/modules/qt_KDSoapServer.pri /usr/lib/qt/mkspecs/modules/qt_KEmoticons.pri /usr/lib/qt/mkspecs/modules/qt_KFileMetaData.pri /usr/lib/qt/mkspecs/modules/qt_KGlobalAccel.pri /usr/lib/qt/mkspecs/modules/qt_KGuiAddons.pri /usr/lib/qt/mkspecs/modules/qt_KHolidays.pri /usr/lib/qt/mkspecs/modules/qt_KI18n.pri /usr/lib/qt/mkspecs/modules/qt_KIconThemes.pri /usr/lib/qt/mkspecs/modules/qt_KIdleTime.pri /usr/lib/qt/mkspecs/modules/qt_KIOCore.pri /usr/lib/qt/mkspecs/modules/qt_KIOFileWidgets.pri /usr/lib/qt/mkspecs/modules/qt_KIOGui.pri /usr/lib/qt/mkspecs/modules/qt_KIOWidgets.pri /usr/lib/qt/mkspecs/modules/qt_Kirigami2.pri /usr/lib/qt/mkspecs/modules/qt_KItemModels.pri /usr/lib/qt/mkspecs/modules/qt_KItemViews.pri /usr/lib/qt/mkspecs/modules/qt_KJobWidgets.pri /usr/lib/qt/mkspecs/modules/qt_KJS.pri /usr/lib/qt/mkspecs/modules/qt_KJSApi.pri /usr/lib/qt/mkspecs/modules/qt_KNewStuff.pri /usr/lib/qt/mkspecs/modules/qt_KNewStuffCore.pri /usr/lib/qt/mkspecs/modules/qt_KNotifications.pri /usr/lib/qt/mkspecs/modules/qt_KNotifyConfig.pri /usr/lib/qt/mkspecs/modules/qt_KNTLM.pri /usr/lib/qt/mkspecs/modules/qt_KParts.pri /usr/lib/qt/mkspecs/modules/qt_KPeople.pri /usr/lib/qt/mkspecs/modules/qt_KPeopleWidgets.pri /usr/lib/qt/mkspecs/modules/qt_KPty.pri /usr/lib/qt/mkspecs/modules/qt_KRunner.pri /usr/lib/qt/mkspecs/modules/qt_KScreen.pri /usr/lib/qt/mkspecs/modules/qt_KService.pri /usr/lib/qt/mkspecs/modules/qt_KSyntaxHighlighting.pri /usr/lib/qt/mkspecs/modules/qt_KTextEditor.pri /usr/lib/qt/mkspecs/modules/qt_KTextWidgets.pri /usr/lib/qt/mkspecs/modules/qt_KUnitConversion.pri /usr/lib/qt/mkspecs/modules/qt_KUserFeedbackCore.pri /usr/lib/qt/mkspecs/modules/qt_KUserFeedbackWidgets.pri /usr/lib/qt/mkspecs/modules/qt_KWallet.pri /usr/lib/qt/mkspecs/modules/qt_KWaylandClient.pri /usr/lib/qt/mkspecs/modules/qt_KWaylandServer.pri /usr/lib/qt/mkspecs/modules/qt_KWidgetsAddons.pri /usr/lib/qt/mkspecs/modules/qt_KWindowSystem.pri /usr/lib/qt/mkspecs/modules/qt_KXmlGui.pri /usr/lib/qt/mkspecs/modules/qt_lib_accessibility_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_bootstrap_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_concurrent.pri /usr/lib/qt/mkspecs/modules/qt_lib_concurrent_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_core.pri /usr/lib/qt/mkspecs/modules/qt_lib_core_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_dbus.pri /usr/lib/qt/mkspecs/modules/qt_lib_dbus_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_designer.pri /usr/lib/qt/mkspecs/modules/qt_lib_designer_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_designercomponents_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_devicediscovery_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_edid_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_egl_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_eglfs_kms_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_eglfsdeviceintegration_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_eventdispatcher_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_fb_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_fontdatabase_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_glx_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_gui.pri /usr/lib/qt/mkspecs/modules/qt_lib_gui_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_help.pri /usr/lib/qt/mkspecs/modules/qt_lib_help_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_input_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_kms_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_linuxaccessibility_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_location.pri /usr/lib/qt/mkspecs/modules/qt_lib_location_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_multimedia.pri /usr/lib/qt/mkspecs/modules/qt_lib_multimedia_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_multimediagsttools_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_multimediawidgets.pri /usr/lib/qt/mkspecs/modules/qt_lib_multimediawidgets_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_network.pri /usr/lib/qt/mkspecs/modules/qt_lib_network_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_opengl.pri /usr/lib/qt/mkspecs/modules/qt_lib_opengl_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_openglextensions.pri /usr/lib/qt/mkspecs/modules/qt_lib_openglextensions_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_packetprotocol_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_pdf.pri /usr/lib/qt/mkspecs/modules/qt_lib_pdf_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_pdfwidgets.pri /usr/lib/qt/mkspecs/modules/qt_lib_pdfwidgets_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_platformcompositor_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_positioning.pri /usr/lib/qt/mkspecs/modules/qt_lib_positioning_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_positioningquick.pri /usr/lib/qt/mkspecs/modules/qt_lib_positioningquick_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_printsupport.pri /usr/lib/qt/mkspecs/modules/qt_lib_printsupport_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_qml.pri /usr/lib/qt/mkspecs/modules/qt_lib_qml_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_qmldebug_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_qmldevtools_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_qmlmodels.pri /usr/lib/qt/mkspecs/modules/qt_lib_qmlmodels_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_qmltest.pri /usr/lib/qt/mkspecs/modules/qt_lib_qmltest_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_qmlworkerscript.pri /usr/lib/qt/mkspecs/modules/qt_lib_qmlworkerscript_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_qtmultimediaquicktools_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_quick.pri /usr/lib/qt/mkspecs/modules/qt_lib_quick_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_quickcontrols2.pri /usr/lib/qt/mkspecs/modules/qt_lib_quickcontrols2_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_quickparticles_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_quickshapes_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_quicktemplates2.pri /usr/lib/qt/mkspecs/modules/qt_lib_quicktemplates2_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_quickwidgets.pri /usr/lib/qt/mkspecs/modules/qt_lib_quickwidgets_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_sensors.pri /usr/lib/qt/mkspecs/modules/qt_lib_sensors_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_service_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_sql.pri /usr/lib/qt/mkspecs/modules/qt_lib_sql_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_svg.pri /usr/lib/qt/mkspecs/modules/qt_lib_svg_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_testlib.pri /usr/lib/qt/mkspecs/modules/qt_lib_testlib_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_texttospeech.pri /usr/lib/qt/mkspecs/modules/qt_lib_texttospeech_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_theme_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_uiplugin.pri /usr/lib/qt/mkspecs/modules/qt_lib_uitools.pri /usr/lib/qt/mkspecs/modules/qt_lib_uitools_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_vulkan_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_waylandclient.pri /usr/lib/qt/mkspecs/modules/qt_lib_waylandclient_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_waylandcompositor.pri /usr/lib/qt/mkspecs/modules/qt_lib_waylandcompositor_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_webchannel.pri /usr/lib/qt/mkspecs/modules/qt_lib_webchannel_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_webengine.pri /usr/lib/qt/mkspecs/modules/qt_lib_webengine_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_webenginecore.pri /usr/lib/qt/mkspecs/modules/qt_lib_webenginecore_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_webenginecoreheaders_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_webenginewidgets.pri /usr/lib/qt/mkspecs/modules/qt_lib_webenginewidgets_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_widgets.pri /usr/lib/qt/mkspecs/modules/qt_lib_widgets_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_x11extras.pri /usr/lib/qt/mkspecs/modules/qt_lib_x11extras_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_xcb_qpa_lib_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_xkbcommon_support_private.pri /usr/lib/qt/mkspecs/modules/qt_lib_xml.pri /usr/lib/qt/mkspecs/modules/qt_lib_xml_private.pri /usr/lib/qt/mkspecs/modules/qt_phonon4qt5.pri /usr/lib/qt/mkspecs/modules/qt_Prison.pri /usr/lib/qt/mkspecs/modules/qt_QuickAddons.pri /usr/lib/qt/mkspecs/modules/qt_Solid.pri /usr/lib/qt/mkspecs/modules/qt_SonnetCore.pri /usr/lib/qt/mkspecs/modules/qt_SonnetUi.pri /usr/lib/qt/mkspecs/modules/qt_Syndication.pri /usr/lib/qt/mkspecs/modules/qt_ThreadWeaver.pri /usr/lib/qt/mkspecs/features/qt_functions.prf /usr/lib/qt/mkspecs/features/qt_config.prf /usr/lib/qt/mkspecs/linux-g++/qmake.conf /usr/lib/qt/mkspecs/features/spec_post.prf .qmake.stash /usr/lib/qt/mkspecs/features/exclusive_builds.prf /usr/lib/qt/mkspecs/features/toolchain.prf /usr/lib/qt/mkspecs/features/default_pre.prf /usr/lib/qt/mkspecs/features/resolve_config.prf /usr/lib/qt/mkspecs/features/default_post.prf /usr/lib/qt/mkspecs/features/warn_on.prf /usr/lib/qt/mkspecs/features/qt.prf /usr/lib/qt/mkspecs/features/resources_functions.prf /usr/lib/qt/mkspecs/features/resources.prf /usr/lib/qt/mkspecs/features/moc.prf /usr/lib/qt/mkspecs/features/link_ltcg.prf /usr/lib/qt/mkspecs/features/unix/opengl.prf /usr/lib/qt/mkspecs/features/uic.prf /usr/lib/qt/mkspecs/features/unix/thread.prf /usr/lib/qt/mkspecs/features/qmake_use.prf /usr/lib/qt/mkspecs/features/file_copies.prf /usr/lib/qt/mkspecs/features/testcase_targets.prf /usr/lib/qt/mkspecs/features/exceptions.prf /usr/lib/qt/mkspecs/features/yacc.prf /usr/lib/qt/mkspecs/features/lex.prf Grafica.pro
 #  Implicit rule search has not been done.
-#  Last modified 2022-02-05 16:17:36.0692468
+#  Last modified 2022-02-05 21:46:29.6423616
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 518):
@@ -740,8 +751,9 @@ Makefile: Grafica.pro /usr/lib/qt/mkspecs/linux-g++/qmake.conf /usr/lib/qt/mkspe
 
 moc_mainwindow.cpp: include/mainwindow.h include/EquationSystem.hpp include/funcion.hpp moc_predefs.h /usr/bin/moc
 #  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Last modified 2022-02-05 18:09:49.2541033
+#  File has been updated.
+#  Successfully updated.
 #  recipe to execute (from 'Makefile', line 795):
 	/usr/bin/moc $(DEFINES) --include '/Datos/Programación/Proyectos C++/Grafica/moc_predefs.h' -I/usr/lib/qt/mkspecs/linux-g++ -I'/Datos/Programación/Proyectos C++/Grafica' -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I/usr/include/c++/11.1.0 -I/usr/include/c++/11.1.0/x86_64-pc-linux-gnu -I/usr/include/c++/11.1.0/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include-fixed -I/usr/include include/mainwindow.h -o moc_mainwindow.cpp
 
@@ -824,7 +836,6 @@ uninstall: uninstall_target FORCE
 
 /usr/lib/qt/mkspecs/modules/qt_lib_webchannel_private.pri:
 #  Implicit rule search has been done.
- 
 #  Last modified 2022-01-29 23:45:11
 #  File has been updated.
 #  Successfully updated.
@@ -905,6 +916,7 @@ compiler_uic_clean:
 
 /usr/lib/qt/mkspecs/modules/qt_lib_qtmultimediaquicktools_private.pri:
 #  Implicit rule search has been done.
+ 
 #  Last modified 2022-01-30 11:25:44
 #  File has been updated.
 #  Successfully updated.
@@ -940,7 +952,6 @@ compiler_moc_source_clean:
 
 /usr/lib/qt/mkspecs/modules/qt_lib_pdfwidgets_private.pri:
 #  Implicit rule search has been done.
- 
 #  Last modified 2022-01-31 22:20:09
 #  File has been updated.
 #  Successfully updated.
@@ -1120,11 +1131,9 @@ compiler_yacc_impl_make_all:
 
 Grafica: ui_mainwindow.h main.o mainwindow.o funcion.o EquationSystem.o moc_mainwindow.o
 #  Implicit rule search has not been done.
-#  File does not exist.
+#  Last modified 2022-02-05 18:13:22.061
 #  File has been updated.
-#  Needs to be updated (-q is set).
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
+#  Successfully updated.
 #  recipe to execute (from 'Makefile', line 297):
 	$(LINK) $(LFLAGS) -o $(TARGET) $(OBJECTS) $(OBJCOMP) $(LIBS)
 
@@ -1138,40 +1147,19 @@ Grafica: ui_mainwindow.h main.o mainwindow.o funcion.o EquationSystem.o moc_main
 #  Implicit rule search has been done.
 #  Last modified 2022-02-05 00:30:47
 #  File has been updated.
- 
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_webenginewidgets.pri:
 #  Implicit rule search has been done.
 #  Last modified 2022-01-31 22:20:09
- 
 #  File has been updated.
 #  Successfully updated.
 
 ui_mainwindow.h: ui/mainwindow.ui /usr/bin/uic
 #  Implicit rule search has not been done.
-#  Implicit/static pattern stem: ''
-#  File does not exist.
+#  Last modified 2022-02-05 18:09:37.2788124
 #  File has been updated.
-#  Needs to be updated (-q is set).
-# automatic
-# @ := ui_mainwindow.h
-# automatic
-# * := 
-# automatic
-# < := ui/mainwindow.ui
-# automatic
-# + := ui/mainwindow.ui /usr/bin/uic
-# automatic
-# % := 
-# automatic
-# ^ := ui/mainwindow.ui /usr/bin/uic
-# automatic
-# ? := ui/mainwindow.ui /usr/bin/uic
-# automatic
-# | := 
-# variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=1/11=9%
+#  Successfully updated.
 #  recipe to execute (from 'Makefile', line 806):
 	/usr/bin/uic ui/mainwindow.ui -o ui_mainwindow.h
 
@@ -1183,9 +1171,10 @@ ui_mainwindow.h: ui/mainwindow.ui /usr/bin/uic
 
 # Not a target:
 src/mainwindow.cpp:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2022-02-05 18:13:11.3557794
+#  File has been updated.
+#  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_KIOCore.pri:
 #  Implicit rule search has been done.
@@ -1206,6 +1195,7 @@ src/mainwindow.cpp:
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_core.pri:
+ 
 #  Implicit rule search has been done.
 #  Last modified 2022-02-05 00:15:22
 #  File has been updated.
@@ -1323,9 +1313,7 @@ all: Makefile Grafica
 #  Implicit rule search has been done.
 #  File does not exist.
 #  File has been updated.
-#  Needs to be updated (-q is set).
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
+#  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_KIdleTime.pri:
 #  Implicit rule search has been done.
@@ -1396,7 +1384,7 @@ all: Makefile Grafica
 # Not a target:
 ui/mainwindow.ui:
 #  Implicit rule search has been done.
-#  Last modified 2022-02-05 16:10:52.0761032
+#  Last modified 2022-02-05 16:28:14.5489201
 #  File has been updated.
 #  Successfully updated.
 
@@ -1413,9 +1401,10 @@ qmake_all: FORCE
 
 # Not a target:
 main.cpp:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2022-01-29 21:37:44.6681482
+#  File has been updated.
+#  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_BluezQt.pri:
 #  Implicit rule search has been done.
@@ -1423,7 +1412,6 @@ main.cpp:
 #  File has been updated.
 #  Successfully updated.
 
- 
 /usr/lib/qt/mkspecs/modules/qt_KItemViews.pri:
 #  Implicit rule search has been done.
 #  Last modified 2022-01-03 23:53:28
@@ -1491,22 +1479,26 @@ compiler_uic_make_all: ui_mainwindow.h
 
 # Not a target:
 src/funcion.hpp:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+ 
+#  Last modified 2022-01-29 16:12:58.1088542
+#  File has been updated.
+#  Successfully updated.
 
 main.o: main.cpp include/mainwindow.h include/EquationSystem.hpp include/funcion.hpp
 #  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Last modified 2022-02-05 18:09:41.4139094
+#  File has been updated.
+#  Successfully updated.
 #  recipe to execute (from 'Makefile', line 821):
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o main.cpp
 
 # Not a target:
 include/mainwindow.h:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2022-02-05 18:07:44.1732532
+#  File has been updated.
+#  Successfully updated.
 
 /usr/lib/qt/mkspecs/features/file_copies.prf:
 #  Implicit rule search has been done.
@@ -1516,9 +1508,10 @@ include/mainwindow.h:
 
 # Not a target:
 src/mainwindow.h:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2022-02-05 18:07:44.1732532
+#  File has been updated.
+#  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_uitools.pri:
 #  Implicit rule search has been done.
@@ -1605,8 +1598,9 @@ compiler_rcc_make_all:
 
 moc_mainwindow.o: moc_mainwindow.cpp
 #  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Last modified 2022-02-05 18:09:52.356179
+#  File has been updated.
+#  Successfully updated.
 #  recipe to execute (from 'Makefile', line 837):
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_mainwindow.o moc_mainwindow.cpp
 
@@ -1630,7 +1624,6 @@ moc_mainwindow.o: moc_mainwindow.cpp
 
 /usr/lib/qt/mkspecs/modules/qt_lib_qmltest_private.pri:
 #  Implicit rule search has been done.
- 
 #  Last modified 2022-02-05 00:30:47
 #  File has been updated.
 #  Successfully updated.
@@ -1642,6 +1635,7 @@ compiler_moc_objc_header_clean:
 
 /usr/lib/qt/mkspecs/modules/qt_lib_help_private.pri:
 #  Implicit rule search has been done.
+ 
 #  Last modified 2022-01-29 23:36:41
 #  File has been updated.
 #  Successfully updated.
@@ -1672,9 +1666,10 @@ compiler_moc_objc_header_clean:
 
 # Not a target:
 include/funcion.hpp:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2022-01-29 16:12:58.1088542
+#  File has been updated.
+#  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_openglextensions_private.pri:
 #  Implicit rule search has been done.
@@ -1719,9 +1714,10 @@ install: install_target FORCE
 
 # Not a target:
 src/EquationSystem.cpp:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2022-01-29 22:13:58.8131897
+#  File has been updated.
+#  Successfully updated.
 
 /usr/lib/qt/mkspecs/linux-g++/qmake.conf:
 #  Implicit rule search has been done.
@@ -1774,7 +1770,6 @@ compiler_moc_header_make_all: moc_mainwindow.cpp
 #  Last modified 2022-01-30 13:01:54
 #  File has been updated.
 #  Successfully updated.
- 
 
 /usr/lib/qt/mkspecs/features/testcase_targets.prf:
 #  Implicit rule search has been done.
@@ -1818,16 +1813,17 @@ compiler_moc_predefs_clean:
 #  Last modified 2022-02-04 19:11:10
 #  File has been updated.
 #  Successfully updated.
+ 
 
 # Not a target:
 /usr/lib/qt/mkspecs/features/data/dummy.cpp:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2022-02-05 00:15:22
+#  File has been updated.
+#  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_network_private.pri:
 #  Implicit rule search has been done.
- 
 #  Last modified 2022-02-05 00:15:22
 #  File has been updated.
 #  Successfully updated.
@@ -1903,12 +1899,6 @@ compiler_lex_make_all:
 #  File has been updated.
 #  Successfully updated.
 
-# Not a target:
-.SUFFIXES:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
 first: all
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -1939,6 +1929,7 @@ first: all
 #  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_multimedia_private.pri:
+ 
 #  Implicit rule search has been done.
 #  Last modified 2022-01-30 11:25:44
 #  File has been updated.
@@ -2061,9 +2052,10 @@ install_target: first FORCE
 
 # Not a target:
 /usr/bin/moc:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2022-02-05 00:15:22
+#  File has been updated.
+#  Successfully updated.
 
 /usr/lib/qt/mkspecs/modules/qt_lib_qmlworkerscript_private.pri:
 #  Implicit rule search has been done.
@@ -2078,7 +2070,7 @@ install_target: first FORCE
 #  Successfully updated.
 
 # files hash-table stats:
-# Load=281/1024=27%, Rehash=0, Collisions=171/811=21%
+# Load=281/1024=27%, Rehash=0, Collisions=171/810=21%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
@@ -2086,13 +2078,14 @@ install_target: first FORCE
 # No general ('VPATH' variable) search path.
 
 # strcache buffers: 2 (1) / strings = 292 / storage = 12109 B / avg = 41 B
-# current buf: size = 8162 B / used = 3991 B / count = 111 / avg = 35 B
-# other used: total = 8118 B / count = 181 / avg = 44 B
-# other free: total = 44 B / max = 44 B / min = 44 B / avg = 44 B
+# current buf: size = 8162 B / used = 3958 B / count = 109 / avg = 36 B
+# other used: total = 8151 B / count = 183 / avg = 44 B
+# other free: total = 11 B / max = 11 B / min = 11 B / avg = 11 B
 
-# strcache performance: lookups = 834 / hit rate = 64%
+# strcache performance: lookups = 842 / hit rate = 65%
 # hash-table stats:
-# Load=292/8192=4%, Rehash=0, Collisions=12/834=1%
-# Finished Make data base on Sat Feb  5 16:17:37 2022
+ 
+# Load=292/8192=4%, Rehash=0, Collisions=12/842=1%
+# Finished Make data base on Sat Feb  5 21:46:30 2022
 
  

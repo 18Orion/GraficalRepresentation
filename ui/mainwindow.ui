@@ -78,9 +78,9 @@
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>0</y>
+      <y>20</y>
       <width>231</width>
-      <height>371</height>
+      <height>351</height>
      </rect>
     </property>
     <property name="layoutDirection">
@@ -466,6 +466,56 @@ p, li { white-space: pre-wrap; }
     </property>
     <property name="checked">
      <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>231</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="palette">
+     <palette>
+      <active>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </active>
+      <inactive>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>231</red>
+          <green>231</green>
+          <blue>231</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </inactive>
+      <disabled>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="127">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </disabled>
+     </palette>
+    </property>
+    <property name="text">
+     <string>Function list</string>
     </property>
    </widget>
   </widget>

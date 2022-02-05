@@ -14,6 +14,8 @@
 #include <QString>
 #include <vector>
 #include <QTextItem>
+#include <QModelIndex>
+#include <QListWidgetItem>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -36,6 +38,7 @@ class MainWindow : public QMainWindow
         void on_NewPage_clicked();
         void on_coordinateCheck_toggled(bool checked);
         void on_netCheck_toggled(bool checked);
+        void on_lista_itemClicked(QListWidgetItem* item);
     private:
         void represent(string);
         void newPage();

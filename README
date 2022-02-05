@@ -1,3 +1,0 @@
-This is a program that is able to represent functions and points grafically in a Qt window.
-This uses the function resolver library in https://github.com/18Orion/MathematicalFunctionSolve .
-For compiling the demonstration executable execute make.

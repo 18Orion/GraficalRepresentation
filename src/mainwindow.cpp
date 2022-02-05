@@ -181,3 +181,7 @@ void MainWindow::on_coordinateCheck_toggled(bool checked){
         paintCoordinateNumbers(50);
     }else eraseCoordinateNumbers();
 }
+
+void MainWindow::on_lista_itemClicked(QListWidgetItem* item){
+    ui->functionEdit->setText(item->text());
+}
