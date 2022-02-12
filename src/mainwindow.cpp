@@ -17,7 +17,6 @@ MainWindow::~MainWindow()
     delete ui;
     delete scene;
     delete model;
-    delete eq;
 }
 
 void MainWindow::on_enter_clicked(){
@@ -25,10 +24,16 @@ void MainWindow::on_enter_clicked(){
 }
 
 void MainWindow::on_zoomIn_clicked(){
-    if(zoom*100<250){
+    if(zoom*1.25*100<500){
         zoom=zoom*1.25;
         ui->grafica->scale(1.25,1.25);
         ui->zoom->setText(QString::number(ceil(zoom*100))+"%");
+        eraseCoordinateNumbers();
+        eraseNet();
+        calculateSep();
+        calculateSep();
+        paintCoordinateNumbers(separation);
+        paintNet(separation);
     }
 }
 
@@ -37,6 +42,11 @@ void MainWindow::on_zoomOut_clicked(){
         zoom=zoom*0.75;
         ui->grafica->scale(0.75,0.75);
         ui->zoom->setText(QString::number(ceil(zoom*100))+"%");
+        eraseCoordinateNumbers();
+        eraseNet();
+        calculateSep();
+        paintCoordinateNumbers(separation);
+        paintNet(separation);
     }
 }
 
@@ -44,42 +54,13 @@ void MainWindow::represent(string input){
     functionList.append(QString::fromStdString(input));
     model->setStringList(functionList);
     double difference=ui->interval->toPlainText().toDouble();
-    if (!(input.find(";")!=string::npos)&&input.find("x")!=string::npos){
-        fn->prepare(input);
-        for(double i=-ui->grafica->width()/2;i<=ui->grafica->width()/2;i+=difference){
-            scene->addLine(i,fn->solve(i),i+1,fn->solve(i+1));
-        }
-    }else if(input.find(";")!=string::npos){
-        string eq1,eq2;
-        int i=0;
-        double *x=0, *y=0;
-        bool inEq2=false;
-        for(i=0; i<input.length();i++){
-            if(input[i]!=';'){
-                if(!inEq2) eq1+=input[i];
-                if(inEq2) eq2+=input[i];
-            }else{
-                inEq2=true;
-            }
-        }
-        eq->introduceEquations(eq1,eq2);
-        eq->solve(x,y);
-        fn->prepare(eq1);
-        for(double i=-ui->grafica->width()/2;i<=ui->grafica->width()/2;i+=difference){
-            scene->addLine(i,fn->solve(i),i+1,fn->solve(i+1));
-        }
-        fn->prepare(eq2);
-        for(double i=-ui->grafica->width()/2;i<=ui->grafica->width()/2;i+=difference){
-            scene->addLine(i,fn->solve(i),i+1,fn->solve(i+1));
-        }
-        scene->addEllipse(*x-1,*y-1,2,2);
-        delete x;
-        delete y;
+    if (input.find("x")!=string::npos){
+        QGraphicFunctionLine *l=new QGraphicFunctionLine(-ui->grafica->width(),ui->grafica->width(),input);
+        scene->addItem(l);
     }else if(input.find("y")!=string::npos){
-        input.replace(0,input.length(),'y','x');
-        fn->prepare(input);
+        fn->prepare(input.replace(0,input.length(),'y','x'));
         for(double i=-ui->grafica->width()/2;i<=ui->grafica->width()/2;i+=difference){
-            scene->addLine(fn->solve(i),i,fn->solve(i+1),i+1);
+            scene->addLine(QLineF(fn->solve(i),i,fn->solve(i+1),i+1));
         }
 
     }else if(input.find(",")!=string::npos){
@@ -112,47 +93,55 @@ void MainWindow::newPage(){
     represent("0,0");
     model->setStringList(functionList);
     ui->lista->setModel(model);
-    if(ui->netCheck->isChecked()){
-        paintNet(50);
-    }
-    if(ui->coordinateCheck->isChecked()){
-        paintCoordinateNumbers(50);
-    }
-
+    zoom=1;
+    ui->zoom->setText(QString::number(ceil(zoom*100))+"%");
+    calculateSep();
+    paintNet(separation);
+    paintCoordinateNumbers(separation);
 }
 
 void MainWindow::paintCoordinateNumbers(int spacing){
-    for(int i=0;i<=ui->grafica->width();i+=spacing){
-        QGraphicsSimpleTextItem *text = scene->addSimpleText(QString::number(i));
-        coordinateNumbers.push_back(text);
-        text->setPos(i,-1);
-        text->setTransform(QTransform::fromScale(1, -1));
-        text = scene->addSimpleText(QString::number(-i));
-        coordinateNumbers.push_back(text);
-        text->setPos(-i,-1);
-        text->setTransform(QTransform::fromScale(1, -1));
-    }
-    for(int i=spacing;i<=ui->grafica->height();i+=spacing){
-        QGraphicsSimpleTextItem *text = scene->addSimpleText(QString::number(i));
-        coordinateNumbers.push_back(text);
-        text->setPos(-1,i);
-        text->setTransform(QTransform::fromScale(1, -1));
-        text = scene->addSimpleText(QString::number(-i));
-        coordinateNumbers.push_back(text);
-        text->setPos(-1,-i);
-        text->setTransform(QTransform::fromScale(1, -1));
+    if(ui->coordinateCheck->isChecked()){
+        double textScale=0.8/zoom;
+        for(int i=0;i<=ui->grafica->width();i+=spacing){
+            QGraphicsSimpleTextItem *text = scene->addSimpleText(QString::number(i));
+            coordinateNumbers.push_back(text);
+            text->setPos(i,-1);
+            text->setScale(textScale);
+            text->setTransform(QTransform::fromScale(1, -1));
+            text = scene->addSimpleText(QString::number(-i));
+            coordinateNumbers.push_back(text);
+            text->setPos(-i,-1);
+            text->setScale(textScale);
+            text->setTransform(QTransform::fromScale(1, -1));
+        }
+        for(int i=spacing;i<=ui->grafica->height();i+=spacing){
+            QGraphicsSimpleTextItem *text = scene->addSimpleText(QString::number(i));
+            coordinateNumbers.push_back(text);
+            text->setPos(-1,i);
+            text->setScale(textScale);
+            text->setTransform(QTransform::fromScale(1, -1));
+            text = scene->addSimpleText(QString::number(-i));
+            coordinateNumbers.push_back(text);
+            text->setPos(-1,-i);
+            text->setScale(textScale);
+            text->setTransform(QTransform::fromScale(1, -1));
+        }
     }
 }
 
 void MainWindow::paintNet(int spacing){
-    QPen netPen(Qt::gray);
-    for(i=spacing;i<ui->grafica->width();i+=spacing){
-        net.push_back(scene->addLine(QLineF(i,-ui->grafica->width()/2,i,ui->grafica->width()/2),netPen));
-        net.push_back(scene->addLine(QLineF(-i,-ui->grafica->width()/2,-i,ui->grafica->width()/2),netPen));
-    }
-    for(i=spacing;i<ui->grafica->height();i+=spacing){
-        net.push_back(scene->addLine(QLineF(-ui->grafica->width(),i,ui->grafica->width(),i),netPen));
-        net.push_back(scene->addLine(QLineF(-ui->grafica->width(),-i,ui->grafica->width(),-i),netPen));
+    if(ui->netCheck->isChecked()){
+        QPen netPen(Qt::gray);
+        netPen.setWidth(1);
+        for(i=spacing;i<ui->grafica->width();i+=spacing){
+            net.push_back(scene->addLine(QLineF(i,-ui->grafica->width()/2,i,ui->grafica->width()/2),netPen));
+            net.push_back(scene->addLine(QLineF(-i,-ui->grafica->width()/2,-i,ui->grafica->width()/2),netPen));
+        }
+        for(i=spacing;i<ui->grafica->height();i+=spacing){
+            net.push_back(scene->addLine(QLineF(-ui->grafica->width(),i,ui->grafica->width(),i),netPen));
+            net.push_back(scene->addLine(QLineF(-ui->grafica->width(),-i,ui->grafica->width(),-i),netPen));
+        }
     }
 }
 
@@ -172,16 +161,28 @@ void MainWindow::eraseCoordinateNumbers(){
 
 void MainWindow::on_netCheck_toggled(bool checked){
     if(checked){
-        paintNet(50);
+        paintNet(separation);
     }else eraseNet();
 }
 
 void MainWindow::on_coordinateCheck_toggled(bool checked){
     if(checked){
-        paintCoordinateNumbers(50);
+        paintCoordinateNumbers(separation);
     }else eraseCoordinateNumbers();
 }
 
-void MainWindow::on_lista_itemClicked(QListWidgetItem* item){
-    ui->functionEdit->setText(item->text());
+void MainWindow::calculateSep(){
+    if(zoom>=7){
+        separation=1;
+    }else if(zoom>=5){
+        separation=5;
+    }else if(zoom>=4){
+        separation=10;
+    }else if(zoom>=3){
+        separation=25;
+    }else if(zoom>=2){
+        separation=50;
+    }else{
+        separation=100;
+    }
 }

@@ -10,6 +10,7 @@ CONFIG += c++11
 
 SOURCES += \
     main.cpp \
+    src/qfunctionline.cpp \
     src/mainwindow.cpp \
     src/funcion.cpp \
     src/EquationSystem.cpp
@@ -17,7 +18,8 @@ SOURCES += \
 HEADERS += \
     include/mainwindow.h \
     include/funcion.hpp \
-    include/EquationSystem.hpp
+    include/EquationSystem.hpp \
+    include/qfunctionline.h
 FORMS += \
     ui/mainwindow.ui
 

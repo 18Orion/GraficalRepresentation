@@ -53,10 +53,12 @@ OBJECTS_DIR   = ./
 ####### Files
 
 SOURCES       = main.cpp \
+		src/qfunctionline.cpp \
 		src/mainwindow.cpp \
 		src/funcion.cpp \
 		src/EquationSystem.cpp moc_mainwindow.cpp
 OBJECTS       = main.o \
+		qfunctionline.o \
 		mainwindow.o \
 		funcion.o \
 		EquationSystem.o \
@@ -281,7 +283,9 @@ DIST          = /usr/lib/qt/mkspecs/features/spec_pre.prf \
 		/usr/lib/qt/mkspecs/features/lex.prf \
 		Grafica.pro include/mainwindow.h \
 		include/funcion.hpp \
-		include/EquationSystem.hpp main.cpp \
+		include/EquationSystem.hpp \
+		include/qfunctionline.h main.cpp \
+		src/qfunctionline.cpp \
 		src/mainwindow.cpp \
 		src/funcion.cpp \
 		src/EquationSystem.cpp
@@ -750,8 +754,8 @@ distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents /usr/lib/qt/mkspecs/features/data/dummy.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents include/mainwindow.h include/funcion.hpp include/EquationSystem.hpp $(DISTDIR)/
-	$(COPY_FILE) --parents main.cpp src/mainwindow.cpp src/funcion.cpp src/EquationSystem.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents include/mainwindow.h include/funcion.hpp include/EquationSystem.hpp include/qfunctionline.h $(DISTDIR)/
+	$(COPY_FILE) --parents main.cpp src/qfunctionline.cpp src/mainwindow.cpp src/funcion.cpp src/EquationSystem.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents ui/mainwindow.ui $(DISTDIR)/
 
 
@@ -788,7 +792,7 @@ compiler_moc_header_make_all: moc_mainwindow.cpp
 compiler_moc_header_clean:
 	-$(DEL_FILE) moc_mainwindow.cpp
 moc_mainwindow.cpp: include/mainwindow.h \
-		include/EquationSystem.hpp \
+		include/qfunctionline.h \
 		include/funcion.hpp \
 		moc_predefs.h \
 		/usr/bin/moc
@@ -816,12 +820,16 @@ compiler_clean: compiler_moc_predefs_clean compiler_moc_header_clean compiler_ui
 ####### Compile
 
 main.o: main.cpp include/mainwindow.h \
-		include/EquationSystem.hpp \
+		include/qfunctionline.h \
 		include/funcion.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o main.cpp
 
+qfunctionline.o: src/qfunctionline.cpp src/qfunctionline.h \
+		src/funcion.hpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qfunctionline.o src/qfunctionline.cpp
+
 mainwindow.o: src/mainwindow.cpp src/mainwindow.h \
-		src/EquationSystem.hpp \
+		src/qfunctionline.h \
 		src/funcion.hpp \
 		ui_mainwindow.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o src/mainwindow.cpp

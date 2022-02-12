@@ -1,0 +1,1 @@
+/Datos/Programación/Proyectos C++/Grafica/include/qfunctionline.h
