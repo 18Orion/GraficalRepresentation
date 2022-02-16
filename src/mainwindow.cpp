@@ -13,10 +13,6 @@ MainWindow::MainWindow(QWidget *parent)
 MainWindow::~MainWindow()
 {
     eraseCoordinateNumbers();
-    for(i=0; i<graphicFunctionItem.length();i++){
-        delete graphicFunctionItem[i];
-    }
-    graphicFunctionItem.clear();
     delete fn;
     delete ui;
     delete scene;
@@ -27,23 +23,27 @@ MainWindow::~MainWindow()
 /*      Private     */
 
 void MainWindow::represent(string input){
-    functionList.append(QString::fromStdString(input));
-    model->setStringList(functionList);
-    double difference=ui->interval->toPlainText().toDouble();
-    if(input.find(",")!=string::npos){
-        string x, y;
-        bool xGot=false;
-        for(i=0; i<input.length(); i++){
-            if((isdigit(input[i])||input[i]=='.')&&!xGot) x+=input[i];
-            if((isdigit(input[i])||input[i]=='.')&&xGot) y+=input[i];
-            if(input[i]==',') xGot=true;
+    bool isAlready=false;
+    for(i=0;i<functionList.length();i++){
+        if(functionList[i]==QString::fromStdString(input)) isAlready=true;
+    }
+    if(!isAlready){
+        functionList.append(QString::fromStdString(input));
+        model->setStringList(functionList);
+        double difference=ui->interval->toPlainText().toDouble();
+        if(input.find(",")!=string::npos){
+            string x, y;
+            bool xGot=false;
+            for(i=0; i<input.length(); i++){
+                if((isdigit(input[i])||input[i]=='.')&&!xGot) x+=input[i];
+                if((isdigit(input[i])||input[i]=='.')&&xGot) y+=input[i];
+                if(input[i]==',') xGot=true;
+            }
+        }else{
+            QGraphicFunctionLine *l=new QGraphicFunctionLine(-ui->grafica->width()/2,ui->grafica->width()/2,input);
+            scene->addItem(l);
+            ui->grafica->update();
         }
-        graphicFunctionItem.push_back(scene->addEllipse(stod(x)-1,stod(y)-1,2,2));
-    }else{
-        QGraphicFunctionLine *l=new QGraphicFunctionLine(-ui->grafica->width()/2,ui->grafica->width()/2,input);
-        scene->addItem(l);
-        ui->grafica->update();
-        graphicFunctionItem.push_back(l);
     }
 }
 
@@ -97,12 +97,6 @@ void MainWindow::paintCoordinateNumbers(int spacing){
     }
 }
 
-void MainWindow::refreshItems(){
-    for(i=0; i<graphicFunctionItem.length();i++){
-        graphicFunctionItem[i]->update(QRectF(QPointF(-ui->grafica->width()/2,-ui->grafica->width()/2),QPointF(ui->grafica->width()/2,ui->grafica->width()/2)));
-    }
-}
-
 void MainWindow::paintNet(int spacing){
     if(ui->netCheck->isChecked()){
         QPen netPen(Qt::gray);
@@ -148,7 +142,6 @@ void MainWindow::calculateSep(){
     }
 }
 
-
 /*      Slots       */
 
 void MainWindow::on_lista_clicked(const QModelIndex &index){
@@ -161,10 +154,18 @@ void MainWindow::on_lista_clicked(const QModelIndex &index){
         selected=false;
         eqSys->introduceEquations(eq1,eq2);
         eqSys->solve(&x, &y);
-        //represent(to_string(x)+","+to_string(y));
         scene->addEllipse(x-1,y-1,2,2);
         functionList.append(QString::fromStdString(to_string(x)+","+to_string(y)));
         model->setStringList(functionList);
+    }
+}
+
+void MainWindow::on_functionEdit_textChanged(){
+    string fn=ui->functionEdit->toPlainText().toStdString();
+    if(fn.find('\n')!=string::npos&&fn!=""){
+        replace(fn.begin(),fn.end(),'\n','\0');
+        represent(fn);
+        ui->functionEdit->setText("");
     }
 }
 
@@ -198,7 +199,6 @@ void MainWindow::on_zoomIn_clicked(){
         eraseNet();
         paintCoordinateNumbers(separation);
         paintNet(separation);
-        refreshItems();
     }
 }
 
@@ -212,6 +212,5 @@ void MainWindow::on_zoomOut_clicked(){
         eraseNet();
         paintCoordinateNumbers(separation);
         paintNet(separation);
-        refreshItems();
     }
 }

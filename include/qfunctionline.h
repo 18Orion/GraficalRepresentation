@@ -14,6 +14,7 @@ class QGraphicFunctionLine : public QGraphicsItem, funcion
         void paint(QPainter *painter, const QStyleOptionGraphicsItem *options, QWidget *widget);
         QRectF boundingRect() const;
         void changeItem(int b, int e, string fn);
+        void rePaint();
     private:
         int begin, end;
         string function;

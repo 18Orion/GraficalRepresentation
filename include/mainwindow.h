@@ -39,12 +39,12 @@ class MainWindow : public QMainWindow
         void on_coordinateCheck_toggled(bool checked);
         void on_netCheck_toggled(bool checked);
         void on_lista_clicked(const QModelIndex &index);
+        void on_functionEdit_textChanged();
     private:
         void eraseNet();
         void represent(string);
         void newPage();
         void paintCoordinateNumbers(int spacing);
-        void refreshItems();
         void paintNet(int spacing);
         void eraseCoordinateNumbers();
         void calculateSep();
@@ -53,7 +53,6 @@ class MainWindow : public QMainWindow
         equationSystem *eqSys=new equationSystem();
         QList<QString> functionList;
         QList<QGraphicsSimpleTextItem*> coordinateNumbers;
-        QList<QGraphicsItem*> graphicFunctionItem;
         QList<QGraphicsLineItem*> net;
         QGraphicsScene *scene;
         funcion *fn=new funcion();

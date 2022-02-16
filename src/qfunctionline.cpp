@@ -19,6 +19,15 @@ QRectF QGraphicFunctionLine::boundingRect() const{
     return QRectF(QPointF(-1000,-1000),QPointF(1000,1000));;
 }
 
+void QGraphicFunctionLine::rePaint(){
+    if(function.find("y")!=string::npos){
+        xVar=false;
+        replace(function.begin(),function.end(),'y','x');
+    }
+    prepare(function);
+    update();
+}
+
 void QGraphicFunctionLine::changeItem(int b, int e, string fn){
     function=fn;
     begin=b;
