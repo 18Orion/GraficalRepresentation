@@ -1,9 +1,9 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
-//#include "funcion.hpp"
-//#include "EquationSystem.hpp"
+#include "ui_mainwindow.h"
 #include "qfunctionline.h"
+#include "EquationSystem.hpp"
 #include <QWidget>
 #include <QMainWindow>
 #include <iostream>
@@ -38,22 +38,28 @@ class MainWindow : public QMainWindow
         void on_NewPage_clicked();
         void on_coordinateCheck_toggled(bool checked);
         void on_netCheck_toggled(bool checked);
+        void on_lista_clicked(const QModelIndex &index);
     private:
+        void eraseNet();
         void represent(string);
         void newPage();
         void paintCoordinateNumbers(int spacing);
+        void refreshItems();
         void paintNet(int spacing);
-        void eraseNet();
         void eraseCoordinateNumbers();
         void calculateSep();
         double zoom=1;
         QStringListModel *model = new QStringListModel();
+        equationSystem *eqSys=new equationSystem();
         QList<QString> functionList;
         QList<QGraphicsSimpleTextItem*> coordinateNumbers;
+        QList<QGraphicsItem*> graphicFunctionItem;
         QList<QGraphicsLineItem*> net;
         QGraphicsScene *scene;
         funcion *fn=new funcion();
         Ui::MainWindow *ui;
+        string eq1, eq2;
+        bool selected=false;
         int i=0, separation=50;
 };
 #endif // MAINWINDOW_H

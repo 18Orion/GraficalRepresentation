@@ -1,3 +1,6 @@
+#ifndef FUNCTION_HPP
+#define FUNCTION_HPP
+
 #include <iostream>
 #include <vector>
 #include <cmath> 
@@ -19,3 +22,5 @@ class funcion{
         void prepare(string funcion);   //Prepara la función para ser resuelta
         string returnFunction();            //Muestra la función
 };
+
+#endif

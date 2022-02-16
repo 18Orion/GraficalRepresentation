@@ -35,7 +35,7 @@ void equationSystem::solve(double *x, double *y){
         p2.y=fn2->solve(i);
         if(abs(p1.y-p2.y)>distancePoints){
             diference=-diference/10;
-        }else if(p1.y==p2.y||abs(p1.y-p2.y)<0.001) break;
+        }else if(p1.y==p2.y||abs(p1.y-p2.y)<0.001||diference==abs(p1.y-p2.y)) break;
         distancePoints=abs(p1.y-p2.y); 
     }
     *x=i;
