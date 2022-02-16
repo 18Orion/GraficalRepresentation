@@ -11,3 +11,13 @@ cd GraphicalRepresentation
 qmake  
 make
 ```
+
+# **Usage**
+```
+./Grafica
+```
+
+You should enter only a mathematical function, **not an equation** as the second part is supposed as in x^2=y(you unly write x^2).
+You can enter a point by typing two numbers (x, y) separated by a comma.
+To use powers you must use ^.
+To define a system equation press two different equations
