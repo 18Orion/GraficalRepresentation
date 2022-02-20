@@ -1,4 +1,4 @@
-#include "qfunctionline.h"
+#include "include/qfunctionline.h"
 
 QGraphicFunctionLine::QGraphicFunctionLine(int b, int e, string fn){
     function=fn;

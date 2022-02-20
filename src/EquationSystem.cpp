@@ -1,4 +1,4 @@
-#include "EquationSystem.hpp"
+#include "include/EquationSystem.hpp"
 
 equationSystem::equationSystem(){
 

@@ -1,1 +1,0 @@
-/Datos/Programación/Proyectos C++/Grafica/include/funcion.hpp

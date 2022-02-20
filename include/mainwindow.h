@@ -4,7 +4,7 @@
 #include "ui_mainwindow.h"
 #include "qfunctionline.h"
 #include "EquationSystem.hpp"
-#include <QWidget>
+//#include <QWidget>
 #include <QMainWindow>
 #include <iostream>
 #include <QGraphicsSimpleTextItem>
@@ -13,7 +13,6 @@
 #include <QListView>
 #include <QStringListModel>
 #include <QString>
-#include <vector>
 #include <QTextItem>
 #include <QModelIndex>
 #include <QListWidgetItem>
@@ -41,13 +40,13 @@ class MainWindow : public QMainWindow
         void on_lista_clicked(const QModelIndex &index);
         void on_functionEdit_textChanged();
     private:
-        void eraseNet();
-        void represent(string);
-        void newPage();
-        void paintCoordinateNumbers(int spacing);
-        void paintNet(int spacing);
-        void eraseCoordinateNumbers();
-        void calculateSep();
+        void eraseNet();        //Erases the net which is painted in gray to indicate points
+        void represent(string); //Function that takes iput and represents a function or point
+        void newPage();         //Creates a new scene erasing everything else
+        void paintCoordinateNumbers(int spacing);   //Paints QTextItems to indicate the numbers
+        void paintNet(int spacing); //Paint the gray net
+        void eraseCoordinateNumbers();  //Erases numbers of the net
+        void calculateSep();    //Calculates the difference between the numbers and lines of the net depending on the zoom
         double zoom=1;
         QStringListModel *model = new QStringListModel();
         equationSystem *eqSys=new equationSystem();

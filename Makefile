@@ -37,7 +37,7 @@ MOVE          = mv -f
 TAR           = tar -cf
 COMPRESS      = gzip -9f
 DISTNAME      = Grafica1.0.0
-DISTDIR = /Datos/Programación/Proyectos\ C++/Grafica/.tmp/Grafica1.0.0
+DISTDIR = /Datos/Programación/Proyectos\ C++/GraphicalRepresentation/.tmp/Grafica1.0.0
 LINK          = g++
 LFLAGS        = -Wl,-O1 -pipe -O2 -std=gnu++11 -flto=4 -fno-fat-lto-objects -fuse-linker-plugin -fPIC
 LIBS          = $(SUBLIBS) /usr/lib/libQt5Widgets.so /usr/lib/libQt5Gui.so /usr/lib/libQt5Core.so -lGL -lpthread   
@@ -801,7 +801,7 @@ moc_mainwindow.cpp: include/mainwindow.h \
 		include/EquationSystem.hpp \
 		moc_predefs.h \
 		/usr/bin/moc
-	/usr/bin/moc $(DEFINES) --include '/Datos/Programación/Proyectos C++/Grafica/moc_predefs.h' -I/usr/lib/qt/mkspecs/linux-g++ -I'/Datos/Programación/Proyectos C++/Grafica' -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I/usr/include/c++/11.1.0 -I/usr/include/c++/11.1.0/x86_64-pc-linux-gnu -I/usr/include/c++/11.1.0/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include-fixed -I/usr/include include/mainwindow.h -o moc_mainwindow.cpp
+	/usr/bin/moc $(DEFINES) --include '/Datos/Programación/Proyectos C++/GraphicalRepresentation/moc_predefs.h' -I/usr/lib/qt/mkspecs/linux-g++ -I'/Datos/Programación/Proyectos C++/GraphicalRepresentation' -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I/usr/include/c++/11.1.0 -I/usr/include/c++/11.1.0/x86_64-pc-linux-gnu -I/usr/include/c++/11.1.0/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include-fixed -I/usr/include include/mainwindow.h -o moc_mainwindow.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
@@ -831,22 +831,16 @@ main.o: main.cpp include/mainwindow.h \
 		include/EquationSystem.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o main.cpp
 
-qfunctionline.o: src/qfunctionline.cpp src/qfunctionline.h \
-		src/funcion.hpp
+qfunctionline.o: src/qfunctionline.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qfunctionline.o src/qfunctionline.cpp
 
-mainwindow.o: src/mainwindow.cpp src/mainwindow.h \
-		ui_mainwindow.h \
-		src/qfunctionline.h \
-		src/funcion.hpp \
-		src/EquationSystem.hpp
+mainwindow.o: src/mainwindow.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o src/mainwindow.cpp
 
-funcion.o: src/funcion.cpp src/funcion.hpp
+funcion.o: src/funcion.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o funcion.o src/funcion.cpp
 
-EquationSystem.o: src/EquationSystem.cpp src/EquationSystem.hpp \
-		src/funcion.hpp
+EquationSystem.o: src/EquationSystem.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o EquationSystem.o src/EquationSystem.cpp
 
 moc_mainwindow.o: moc_mainwindow.cpp 

@@ -1,4 +1,4 @@
-#include "mainwindow.h"
+#include "include/mainwindow.h"
 
 /*      Creator & destructor        */
 
@@ -12,6 +12,7 @@ MainWindow::MainWindow(QWidget *parent)
 
 MainWindow::~MainWindow()
 {
+    //Erases all pointers
     eraseCoordinateNumbers();
     delete fn;
     delete ui;
@@ -145,6 +146,7 @@ void MainWindow::calculateSep(){
 /*      Slots       */
 
 void MainWindow::on_lista_clicked(const QModelIndex &index){
+    /*  Takes the clicked item and calculate the equation system    */
     if(!selected){
         eq1=index.data(Qt::DisplayRole).toString().toStdString();
         selected=true;
@@ -161,6 +163,7 @@ void MainWindow::on_lista_clicked(const QModelIndex &index){
 }
 
 void MainWindow::on_functionEdit_textChanged(){
+    //Takes the change of the text and check if it is enter to represent the function
     string fn=ui->functionEdit->toPlainText().toStdString();
     if(fn.find('\n')!=string::npos&&fn!=""){
         replace(fn.begin(),fn.end(),'\n','\0');
@@ -170,18 +173,21 @@ void MainWindow::on_functionEdit_textChanged(){
 }
 
 void MainWindow::on_netCheck_toggled(bool checked){
+    //Changes the visibility of the net
     if(checked){
         paintNet(separation);
     }else eraseNet();
 }
 
 void MainWindow::on_coordinateCheck_toggled(bool checked){
+    //Changes the visibility of the numbers of the net
     if(checked){
         paintCoordinateNumbers(separation);
     }else eraseCoordinateNumbers();
 }
 
 void MainWindow::on_NewPage_clicked(){
+    //Creates new page on user click
     newPage();
 }
 
@@ -190,6 +196,7 @@ void MainWindow::on_enter_clicked(){
 }
 
 void MainWindow::on_zoomIn_clicked(){
+    //Zooms in if possible
     if(zoom*1.25*100<500){
         zoom=zoom*1.25;
         ui->grafica->scale(1.25,1.25);
@@ -203,6 +210,7 @@ void MainWindow::on_zoomIn_clicked(){
 }
 
 void MainWindow::on_zoomOut_clicked(){
+    //Zooms out if possible
     if(zoom*100>50&&zoom*0.75*100>=50){
         zoom=zoom*0.75;
         ui->grafica->scale(0.75,0.75);
